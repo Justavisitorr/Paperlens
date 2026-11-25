@@ -1,0 +1,309 @@
+/* ============ Focus reading ============ */
+
+.reader {
+  position: relative;
+}
+.focus-reader {
+  position: absolute;
+  inset: 0;
+  /* above the mobile detail sheet, below modals and the sidebar overlay */
+  z-index: 55;
+  display: flex;
+  flex-direction: column;
+  background: var(--bg);
+  animation: focus-in 0.26s var(--ease);
+}
+.focus-reader:focus {
+  outline: none;
+}
+.focus-bar {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  height: 52px;
+  padding: 0 14px 0 28px;
+  border-bottom: 1px solid var(--border);
+}
+.focus-trail {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  overflow: hidden;
+  color: var(--muted);
+  font-size: var(--fs);
+  white-space: nowrap;
+}
+.focus-trail > span {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  min-width: 0;
+  flex-shrink: 1;
+}
+.focus-trail button {
+  max-width: 180px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 3px 6px;
+  border-radius: 6px;
+  color: var(--text-2);
+}
+.focus-trail button:hover {
+  background: var(--hover);
+  color: var(--text);
+}
+.focus-trail strong {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-left: 6px;
+  color: var(--text);
+  font-weight: 550;
+}
+.focus-progress {
+  position: relative;
+  flex: none;
+  padding: 0 0 6px;
+  color: var(--muted);
+  font-size: var(--fs-sm);
+  font-variant-numeric: tabular-nums;
+}
+.focus-progress::before,
+.focus-progress i {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  border-radius: 2px;
+}
+.focus-progress::before {
+  right: 0;
+  background: var(--border);
+}
+.focus-progress i {
+  background: var(--accent);
+  transition: width 0.3s var(--ease);
+}
+.focus-scroll {
+  flex: 1;
+  min-height: 0;
+  overflow: auto;
+  scrollbar-gutter: stable both-edges;
+}
+.focus-col {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 44px 32px 64px;
+  animation: rise 0.28s var(--ease);
+}
+.focus-col .node-details h2 {
+  font-size: 26px;
+  line-height: 1.35;
+  letter-spacing: -0.01em;
+}
+.focus-col .node-summary,
+.focus-col .plain-explanation p {
+  font-size: var(--fs-read);
+  line-height: 1.8;
+}
+.focus-children {
+  margin-top: 36px;
+}
+.focus-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 10px;
+}
+.focus-cards button {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+  padding: 14px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  text-align: left;
+  transition:
+    border-color 0.15s,
+    transform 0.15s var(--ease),
+    box-shadow 0.15s;
+}
+.focus-cards button:hover {
+  border-color: var(--border-strong);
+  box-shadow: var(--shadow);
+  transform: translateY(-1px);
+}
+.focus-cards strong {
+  color: var(--text);
+  font-weight: 550;
+  line-height: 1.45;
+}
+.focus-cards small {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  color: var(--text-2);
+  font-size: var(--fs-sm);
+  line-height: 1.6;
+}
+.focus-foot {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+  align-items: center;
+  gap: 16px;
+  padding: 10px 20px;
+  border-top: 1px solid var(--border);
+}
+.focus-foot > button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+  padding: 8px 10px;
+  border-radius: var(--radius);
+  color: var(--text);
+  text-align: left;
+}
+.focus-foot > button.is-next {
+  justify-self: end;
+  text-align: right;
+}
+.focus-foot > button:hover:not(:disabled) {
+  background: var(--hover);
+}
+.focus-foot > button:disabled {
+  color: var(--muted);
+  cursor: default;
+}
+.focus-foot > button > span {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.focus-foot small {
+  color: var(--muted);
+  font-size: 11px;
+}
+.focus-keys {
+  color: var(--muted);
+  font-size: var(--fs-sm);
+  white-space: nowrap;
+}
+@keyframes focus-in {
+  from {
+    opacity: 0;
+    transform: scale(0.985);
+  }
+}
+@media (max-width: 720px) {
+  .focus-bar {
+    padding-left: 16px;
+  }
+  .focus-trail > span {
+    display: none;
+  }
+  .focus-col {
+    padding: 28px 18px 48px;
+  }
+  .focus-col .node-details h2 {
+    font-size: 21px;
+  }
+  .focus-keys {
+    display: none;
+  }
+  .focus-foot {
+    grid-template-columns: 1fr 1fr;
+    padding: 8px 10px;
+  }
+  .focus-foot kbd {
+    display: none;
+  }
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes pulse {
+  50% {
+    opacity: 0.35;
+  }
+}
+@keyframes shimmer {
+  to {
+    background-position: -150% 0;
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+}
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+}
+@keyframes pop {
+  from {
+    opacity: 0;
+    transform: translateY(-4px) scale(0.98);
+  }
+}
+.selection-tool {
+  animation: none;
+}
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes flow {
+  to {
+    stroke-dashoffset: -20;
+  }
+}
+@keyframes flash {
+  0%,
+  30% {
+    background: color-mix(in srgb, var(--mark) 80%, transparent);
+  }
+  100% {
+    background: transparent;
+  }
+}
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 0 0 #e2a80066;
+  }
+  60% {
+    box-shadow: 0 0 0 10px #e2a80000;
+  }
+}
+
+:root[data-motion="reduced"] *,
+:root[data-motion="reduced"] *::before,
+:root[data-motion="reduced"] *::after {
+  animation-duration: 0.001ms !important;
+  animation-iteration-count: 1 !important;
+  transition-duration: 0.001ms !important;
+}
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}

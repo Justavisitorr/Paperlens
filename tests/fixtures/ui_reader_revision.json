@@ -1,0 +1,281 @@
+{
+  "translations": {},
+  "schema_version": "1.0",
+  "document": {
+    "schema_version": "1.0",
+    "title": "UI 确定性夹具",
+    "source_name": "synthetic-ui.pdf",
+    "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "parser": "fixture",
+    "pages": [
+      {
+        "number": 1,
+        "width": 600.0,
+        "height": 800.0,
+        "label": "",
+        "rotation": 0,
+        "status": "ok",
+        "text_chars": 0,
+        "warnings": []
+      }
+    ],
+    "blocks": [
+      {
+        "id": "fixture0",
+        "page": 1,
+        "text": "Original reading item 0.",
+        "raw_text": "Original reading item 0.",
+        "bbox": {
+          "x0": 0.1,
+          "y0": 0.2,
+          "x1": 0.8,
+          "y1": 0.3
+        },
+        "section": "",
+        "kind": "text",
+        "order": 0,
+        "text_warnings": [],
+        "formula": null,
+        "docling_label": "",
+        "heading_level": null,
+        "parent_ref": "",
+        "source_ref": "",
+        "table": null,
+        "caption_ids": [],
+        "text_source": "pdf_text",
+        "ocr_lines": []
+      },
+      {
+        "id": "fixture1",
+        "page": 1,
+        "text": "Original reading item 1.",
+        "raw_text": "Original reading item 1.",
+        "bbox": {
+          "x0": 0.1,
+          "y0": 0.2,
+          "x1": 0.8,
+          "y1": 0.3
+        },
+        "section": "",
+        "kind": "text",
+        "order": 1,
+        "text_warnings": [],
+        "formula": null,
+        "docling_label": "",
+        "heading_level": null,
+        "parent_ref": "",
+        "source_ref": "",
+        "table": null,
+        "caption_ids": [],
+        "text_source": "pdf_text",
+        "ocr_lines": []
+      },
+      {
+        "id": "fixture2",
+        "page": 1,
+        "text": "Original reading item 2.",
+        "raw_text": "Original reading item 2.",
+        "bbox": {
+          "x0": 0.1,
+          "y0": 0.2,
+          "x1": 0.8,
+          "y1": 0.3
+        },
+        "section": "",
+        "kind": "text",
+        "order": 2,
+        "text_warnings": [],
+        "formula": null,
+        "docling_label": "",
+        "heading_level": null,
+        "parent_ref": "",
+        "source_ref": "",
+        "table": null,
+        "caption_ids": [],
+        "text_source": "pdf_text",
+        "ocr_lines": []
+      }
+    ],
+    "warnings": []
+  },
+  "analysis": {
+    "title": "UI 确定性夹具",
+    "summary": "用于浏览器界面回归的纯合成内容。",
+    "paper_type": "other",
+    "research_question": "如何验证界面连接？",
+    "reading_guide": [
+      "先读总览，再核对正文。"
+    ],
+    "nodes": [
+      {
+        "id": "R",
+        "title": "测试主题",
+        "kind": "theme",
+        "summary": "合成说明",
+        "explanation": "",
+        "evidence_ids": [],
+        "origin": "author",
+        "support": "unverified",
+        "parent_id": null
+      }
+    ],
+    "edges": [],
+    "glossary": [],
+    "warnings": []
+  },
+  "evidence": [],
+  "graphs": [
+    {
+      "id": "overview",
+      "title": "研究全景",
+      "description": "确定性测试视图",
+      "node_ids": [
+        "R"
+      ],
+      "edge_ids": [],
+      "mermaid": "flowchart LR\nnR[\"测试主题\"]",
+      "validated": true
+    }
+  ],
+  "previews": [],
+  "quality": {
+    "total_pages": 1,
+    "parsed_pages": 1,
+    "text_chars": 72,
+    "grounded_nodes": 0,
+    "total_nodes": 1,
+    "checks": [],
+    "warnings": []
+  },
+  "run": {
+    "id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "created_at": "2026-10-13T00:00:00Z",
+    "model": "fixture",
+    "parser": "fixture",
+    "status": "complete",
+    "timings": {},
+    "usage": {
+      "requests": 0,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "prompt_cache_hit_tokens": null,
+      "prompt_cache_miss_tokens": null
+    },
+    "prompt_version": "1.0",
+    "provider_base_url": null,
+    "usage_scope": null,
+    "execution_mode": "api",
+    "derived_from_run_id": null,
+    "processing_profile": "standard",
+    "processing_limits": {},
+    "processing_mode": "analysis",
+    "usage_by_model": {},
+    "usage_by_provider": [],
+    "model_routing": {},
+    "cache_hits": {}
+  },
+  "visuals": [],
+  "quantitative_results": [],
+  "reading": {
+    "version": "2",
+    "source_version": "synthetic-ui-v1",
+    "items": [
+      {
+        "id": "reading-0",
+        "kind": "paragraph",
+        "code_language": "",
+        "parts": [
+          {
+            "block_id": "fixture0",
+            "start": 0,
+            "end": 24,
+            "join": "",
+            "bbox": null
+          }
+        ],
+        "level": 1,
+        "label": "",
+        "href": "",
+        "asset": "",
+        "page": 1,
+        "bbox": null,
+        "result_ids": [],
+        "visual_ids": [],
+        "transcription": null,
+        "content": "Original reading item 0.",
+        "continuation": false,
+        "reference_number": "",
+        "source_pages": [],
+        "table": null,
+        "content_spans": []
+      },
+      {
+        "id": "reading-1",
+        "kind": "paragraph",
+        "code_language": "",
+        "parts": [
+          {
+            "block_id": "fixture1",
+            "start": 0,
+            "end": 24,
+            "join": "",
+            "bbox": null
+          }
+        ],
+        "level": 1,
+        "label": "",
+        "href": "",
+        "asset": "",
+        "page": 1,
+        "bbox": null,
+        "result_ids": [],
+        "visual_ids": [],
+        "transcription": null,
+        "content": "Original reading item 1.",
+        "continuation": false,
+        "reference_number": "",
+        "source_pages": [],
+        "table": null,
+        "content_spans": []
+      },
+      {
+        "id": "reading-2",
+        "kind": "paragraph",
+        "code_language": "",
+        "parts": [
+          {
+            "block_id": "fixture2",
+            "start": 0,
+            "end": 24,
+            "join": "",
+            "bbox": null
+          }
+        ],
+        "level": 1,
+        "label": "",
+        "href": "",
+        "asset": "",
+        "page": 1,
+        "bbox": null,
+        "result_ids": [],
+        "visual_ids": [],
+        "transcription": null,
+        "content": "Original reading item 2.",
+        "continuation": false,
+        "reference_number": "",
+        "source_pages": [],
+        "table": null,
+        "content_spans": []
+      }
+    ],
+    "references": [],
+    "information": {},
+    "information_parts": {},
+    "information_items": {},
+    "structured_pages": [],
+    "hidden_ids": [],
+    "excluded_toc_parts": [],
+    "warnings": []
+  },
+  "source_pdf": null
+}

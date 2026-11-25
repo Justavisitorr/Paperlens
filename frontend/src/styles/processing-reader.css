@@ -1,0 +1,88 @@
+.processing-reader {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  min-height: 480px;
+}
+.processing-reader-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 24px 28px 18px;
+}
+.processing-reader-heading > div {
+  min-width: 0;
+}
+.processing-reader-heading h1 {
+  margin: 6px 0 0;
+  font-size: 21px;
+  overflow-wrap: anywhere;
+}
+.processing-reader-heading > a {
+  flex-shrink: 0;
+}
+.processing-reader-status {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 16px 28px;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+.processing-reader-progress {
+  flex: 1;
+  min-width: min(280px, 100%);
+  display: grid;
+  gap: 7px;
+  font-size: 13px;
+}
+.processing-reader-progress > span {
+  overflow-wrap: anywhere;
+}
+.processing-reader-progress > small {
+  color: var(--muted);
+  line-height: 1.6;
+}
+.processing-reader-progress progress {
+  width: min(360px, 100%);
+  height: 5px;
+  accent-color: var(--accent);
+}
+.processing-reader-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+.processing-reader-pdf {
+  flex: 1;
+  min-height: 300px;
+}
+.processing-reader-message {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 36px 22px;
+  color: var(--muted);
+  line-height: 1.8;
+}
+@media (max-width: 720px) {
+  .processing-reader-heading {
+    padding: 18px 16px 14px;
+    gap: 10px;
+  }
+  .processing-reader-heading h1 {
+    font-size: 17px;
+  }
+  .processing-reader-status {
+    padding: 14px 16px;
+  }
+  .processing-reader .pdf-source-scroll {
+    padding: 12px;
+  }
+}

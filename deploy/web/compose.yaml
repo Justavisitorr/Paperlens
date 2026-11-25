@@ -1,0 +1,17 @@
+services:
+  paperlens:
+    build:
+      context: ../..
+      dockerfile: deploy/web/Dockerfile
+    environment:
+      PAPERLENS_SITE_ORIGIN: ${PAPERLENS_SITE_ORIGIN:?Set the existing Sites URL}
+      PAPERLENS_SITE_ACCESS_FILE: /run/secrets/sites_access
+    volumes:
+      - ${PAPERLENS_DATA_DIRECTORY:?Set the migrated private data directory}:/data
+    secrets:
+      - sites_access
+    restart: unless-stopped
+    stop_grace_period: 90s
+secrets:
+  sites_access:
+    file: ${PAPERLENS_SITES_ACCESS_FILE:?Set a protected runtime credential file}

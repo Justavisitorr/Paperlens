@@ -1,0 +1,132 @@
+.continuous-column {
+  position: relative;
+}
+.has-note-margin .continuous-reading-body {
+  min-height: var(--notes-height, 0);
+}
+.has-note-margin .continuous-prose {
+  margin-left: auto;
+  margin-right: 330px;
+  padding-left: 32px;
+  padding-right: 50px;
+}
+.reading-note-margin {
+  position: absolute;
+  inset: 0 20px auto auto;
+  width: 290px;
+  font-family: var(--font);
+  z-index: 2;
+}
+.reading-note-group {
+  position: absolute;
+  width: 100%;
+  display: grid;
+  gap: 12px;
+}
+.reading-note-margin .reading-note-card {
+  width: 100%;
+  box-sizing: border-box;
+  background: transparent;
+  border: 0;
+  border-left: 2px solid var(--border);
+  border-radius: 0;
+  padding: 0 0 0 16px;
+}
+.reading-note-margin .note-question {
+  border-left-color: #b47b37;
+}
+.reading-note-margin .note-ai {
+  border-left-color: var(--accent);
+}
+.reading-note-margin .note-check {
+  border-left-color: #b47b37;
+  border-left-style: dashed;
+}
+.reading-note-margin .reading-note-card[data-mark-color] {
+  border-left-color: var(--note-mark);
+}
+.reading-note-inline {
+  font: 13px / 1.6 var(--font);
+  margin-top: 12px;
+}
+.reading-note-inline > summary {
+  color: var(--accent);
+  cursor: pointer;
+  width: fit-content;
+}
+.reading-note-inline > div {
+  display: grid;
+  gap: 10px;
+  margin-top: 10px;
+}
+.reading-note-inline .reading-note-card {
+  width: 100%;
+  box-sizing: border-box;
+}
+.note-editor-backdrop {
+  position: fixed;
+  inset: 0;
+  background: #0003;
+  z-index: 85;
+  display: grid;
+  place-items: center;
+  padding: 18px;
+}
+.note-editor-backdrop .note-composer {
+  position: relative;
+  inset: auto;
+  transform: none;
+  width: min(560px, 100%);
+  box-sizing: border-box;
+  max-height: 90dvh;
+  overflow-y: auto;
+  box-shadow: var(--shadow);
+}
+.reading-notes-panel {
+  position: fixed;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 70;
+  box-shadow: -8px 0 32px #0001;
+}
+.reading-object-selection {
+  position: fixed;
+  z-index: 50;
+  display: flex;
+  gap: 6px;
+  background: var(--bg);
+  padding: 7px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+}
+.reading-note-card .markdown math {
+  max-width: 100%;
+  overflow-x: auto;
+}
+.reading-note-card .markdown p {
+  margin: 8px 0;
+}
+.reading-note-card .markdown {
+  font-size: 14px;
+  line-height: 1.7;
+}
+.reading-note-inline .reading-note-head button {
+  font: 12px var(--font);
+}
+@media (max-width: 700px) {
+  .continuous-toolbar {
+    gap: 6px;
+    padding: 8px 12px;
+  }
+  .continuous-toolbar .button {
+    padding-inline: 8px;
+  }
+  .note-editor-backdrop {
+    padding: 12px;
+  }
+  .reading-notes-panel {
+    width: 100%;
+  }
+}

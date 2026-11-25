@@ -1,0 +1,149 @@
+{
+  "verified_at": "2026-09-28",
+  "providers": [
+    {
+      "id": "deepseek",
+      "name": "DeepSeek",
+      "base_url": "https://api.deepseek.com",
+      "protocol": "openai",
+      "key_url": "https://platform.deepseek.com/api_keys",
+      "docs_url": "https://api-docs.deepseek.com/",
+      "requires_key": true
+    },
+    {
+      "id": "openai",
+      "name": "OpenAI",
+      "base_url": "https://api.openai.com/v1",
+      "protocol": "openai",
+      "key_url": "https://platform.openai.com/api-keys",
+      "docs_url": "https://developers.openai.com/api/reference/resources/models/methods/list",
+      "requires_key": true
+    },
+    {
+      "id": "openrouter",
+      "name": "OpenRouter",
+      "base_url": "https://openrouter.ai/api/v1",
+      "protocol": "openai",
+      "key_url": "https://openrouter.ai/settings/keys",
+      "docs_url": "https://openrouter.ai/docs/api/api-reference/models/get-models",
+      "requires_key": true
+    },
+    {
+      "id": "anthropic",
+      "name": "Anthropic / Claude",
+      "base_url": "https://api.anthropic.com/v1",
+      "protocol": "anthropic",
+      "key_url": "https://console.anthropic.com/settings/keys",
+      "docs_url": "https://platform.claude.com/docs/en/api/models/list",
+      "requires_key": true
+    },
+    {
+      "id": "gemini",
+      "name": "Google Gemini",
+      "base_url": "https://generativelanguage.googleapis.com/v1beta/openai",
+      "protocol": "openai",
+      "key_url": "https://aistudio.google.com/apikey",
+      "docs_url": "https://ai.google.dev/gemini-api/docs/openai",
+      "requires_key": true
+    },
+    {
+      "id": "siliconflow",
+      "name": "硅基流动 SiliconFlow",
+      "base_url": "https://api.siliconflow.cn/v1",
+      "protocol": "openai",
+      "key_url": "https://cloud.siliconflow.cn/account/ak",
+      "docs_url": "https://docs.siliconflow.cn/docs/userguide/quickstart",
+      "requires_key": true
+    },
+    {
+      "id": "dashscope",
+      "name": "阿里云百炼（中国内地）",
+      "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+      "protocol": "openai",
+      "key_url": "https://bailian.console.aliyun.com/",
+      "docs_url": "https://help.aliyun.com/zh/model-studio/model-calling-in-sub-workspace",
+      "requires_key": true
+    },
+    {
+      "id": "moonshot",
+      "name": "月之暗面 Kimi",
+      "base_url": "https://api.moonshot.cn/v1",
+      "protocol": "openai",
+      "key_url": "https://platform.moonshot.cn/console/api-keys",
+      "docs_url": "https://platform.kimi.com/docs/get-api-key",
+      "requires_key": true
+    },
+    {
+      "id": "zhipu",
+      "name": "智谱 BigModel",
+      "base_url": "https://open.bigmodel.cn/api/paas/v4",
+      "protocol": "openai",
+      "key_url": "https://open.bigmodel.cn/usercenter/proj-mgmt/apikeys",
+      "docs_url": "https://docs.bigmodel.cn/api-reference",
+      "requires_key": true
+    },
+    {
+      "id": "xai",
+      "name": "xAI Grok",
+      "base_url": "https://api.x.ai/v1",
+      "protocol": "openai",
+      "key_url": "https://console.x.ai/",
+      "docs_url": "https://docs.x.ai/developers/advanced-api-usage/regions",
+      "requires_key": true
+    },
+    {
+      "id": "groq",
+      "name": "Groq",
+      "base_url": "https://api.groq.com/openai/v1",
+      "protocol": "openai",
+      "key_url": "https://console.groq.com/keys",
+      "docs_url": "https://console.groq.com/docs/openai",
+      "requires_key": true
+    },
+    {
+      "id": "mistral",
+      "name": "Mistral",
+      "base_url": "https://api.mistral.ai/v1",
+      "protocol": "openai",
+      "key_url": "https://console.mistral.ai/api-keys",
+      "docs_url": "https://docs.mistral.ai/api/endpoint/models",
+      "requires_key": true
+    },
+    {
+      "id": "fireworks",
+      "name": "Fireworks AI",
+      "base_url": "https://api.fireworks.ai/inference/v1",
+      "protocol": "openai",
+      "key_url": "https://app.fireworks.ai/api-keys",
+      "docs_url": "https://fireworks.ai/docs/api-reference/post-completions",
+      "requires_key": true
+    },
+    {
+      "id": "deepinfra",
+      "name": "DeepInfra",
+      "base_url": "https://api.deepinfra.com/v1/openai",
+      "protocol": "openai",
+      "key_url": "https://deepinfra.com/dash/api_keys",
+      "docs_url": "https://docs.deepinfra.com/chat/overview",
+      "requires_key": true
+    },
+    {
+      "id": "ollama",
+      "name": "Ollama（本机）",
+      "base_url": "http://127.0.0.1:11434/v1",
+      "protocol": "openai",
+      "key_url": "https://ollama.com/",
+      "docs_url": "https://docs.ollama.com/api/openai-compatibility",
+      "requires_key": false
+    },
+    {
+      "id": "custom",
+      "name": "自定义 / 本地服务",
+      "base_url": "http://127.0.0.1:8000/v1",
+      "protocol": "openai",
+      "key_url": "",
+      "docs_url": "",
+      "requires_key": false
+    }
+  ]
+}

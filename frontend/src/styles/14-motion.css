@@ -1,0 +1,10 @@
+/* ============ 11. Motion ============ */
+
+.graph-drawing g.node.is-new {
+  animation: fade 0.45s var(--ease) both;
+}
+.graph-drawing path.draw-in {
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+  animation: draw 0.7s var(--ease) 0.1s forwards;
+}

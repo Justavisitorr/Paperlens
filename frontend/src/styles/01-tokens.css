@@ -1,0 +1,307 @@
+/* ============ 1. Tokens ============ */
+
+:root {
+  color-scheme: light;
+  --bg: #fbfbfa;
+  --surface: #ffffff;
+  --sunken: #f4f4f2;
+  --sidebar: #f7f7f5;
+  --hover: #efefed;
+  --border: #e7e6e3;
+  --border-strong: #d5d4d0;
+  --text: #1f2328;
+  --text-2: #55585e;
+  --muted: #878a90;
+  --accent: #2f6bd8;
+  --accent-soft: #eaf1fd;
+  --on-accent: #ffffff;
+  --ok: #2d7d57;
+  --ok-soft: #e8f5ee;
+  --warn: #a8691b;
+  --warn-soft: #fcf3e3;
+  --bad: #c2362f;
+  --bad-soft: #fdeceb;
+  --mark: #fff0a3;
+  --match-ring: #e3a008;
+  --edge: #c3c5c9;
+  --grid: #e6e6e3;
+  --shadow: 0 1px 2px #1f23280a, 0 6px 24px #1f232814;
+
+  /* one hue per argument role, used as small marks only */
+  --k-theme: #2f6bd8;
+  --k-question: #7a5bd3;
+  --k-method: #2485a8;
+  --k-evidence: #2d8f63;
+  --k-contribution: #c9831a;
+  --k-conclusion: #3f63c7;
+  --k-limitation: #cc5238;
+  --k-concept: #8a8c91;
+  --k-background: #9c7a57;
+
+  --font:
+    Inter, "Segoe UI", "PingFang SC", "Noto Sans SC", "Microsoft YaHei", system-ui,
+    sans-serif;
+  --serif: "Noto Serif SC", "Source Han Serif SC", "Songti SC", "SimSun", Georgia, serif;
+  --mono: "JetBrains Mono", "Cascadia Code", Consolas, monospace;
+  --ui-font-size: 13px;
+  --fs-sm: calc(var(--ui-font-size) - 1px);
+  --fs: var(--ui-font-size);
+  --fs-md: calc(var(--ui-font-size) + 1px);
+  --fs-read: 15px;
+  --fs-lg: calc(var(--ui-font-size) + 7px);
+  --radius: 8px;
+  --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+  --sidebar-w: 264px;
+  --rail-w: 56px;
+  /* the reader's own marks and edits */
+  --mine: #a15c12;
+  --mine-soft: #f8ecdc;
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #161719;
+  --surface: #1d1e21;
+  --sunken: #222326;
+  --sidebar: #191a1c;
+  --hover: #26282b;
+  --border: #2c2e32;
+  --border-strong: #3a3d42;
+  --text: #e7e7e4;
+  --text-2: #b3b5b9;
+  --muted: #84878d;
+  --accent: #6c9ef3;
+  --accent-soft: #1f2d45;
+  --on-accent: #0f1522;
+  --ok: #62bd8a;
+  --ok-soft: #1a3024;
+  --warn: #dfa653;
+  --warn-soft: #36291a;
+  --bad: #ef7a72;
+  --bad-soft: #3a201f;
+  --mark: #5a4b12;
+  --match-ring: #f2c230;
+  --edge: #4a4d53;
+  --grid: #26282b;
+  --shadow: 0 1px 2px #0006, 0 8px 28px #0008;
+  --mine: #dfa25e;
+  --mine-soft: #382a1b;
+
+  --k-theme: #6c9ef3;
+  --k-question: #a68cf0;
+  --k-method: #58b4d4;
+  --k-evidence: #5cc08f;
+  --k-contribution: #e0a84e;
+  --k-conclusion: #7f9cf0;
+  --k-limitation: #ec8468;
+  --k-concept: #9a9ca1;
+  --k-background: #c39f7b;
+}
+
+/* Colour-vision-friendly palette (Okabe–Ito, tuned for contrast on each
+   theme). Red/green pairs become vermillion/blue, and every meaning that used
+   to rest on hue alone also gets a line pattern below. */
+:root[data-vision="cvd"] {
+  --ok: #0a6aa6;
+  --ok-soft: #e5f0f8;
+  --warn: #8a6400;
+  --warn-soft: #f8f1dc;
+  --bad: #c24f00;
+  --bad-soft: #fbeade;
+  --match-ring: #d49a00;
+  --k-theme: #2b2d31;
+  --k-question: #a8508a;
+  --k-method: #3a96cf;
+  --k-evidence: #00926b;
+  --k-contribution: #d08c00;
+  --k-conclusion: #0a6aa6;
+  --k-limitation: #d55e00;
+  --k-concept: #8a8c91;
+  --k-background: #a08a68;
+}
+:root[data-vision="cvd"][data-theme="dark"] {
+  --ok: #56b4e9;
+  --ok-soft: #16283a;
+  --warn: #e8c547;
+  --warn-soft: #33301a;
+  --bad: #f08a3c;
+  --bad-soft: #3a2616;
+  --match-ring: #f0e442;
+  --k-theme: #e7e7e4;
+  --k-question: #e08fbf;
+  --k-method: #56b4e9;
+  --k-evidence: #2fbf94;
+  --k-contribution: #e6a100;
+  --k-conclusion: #6fb0e8;
+  --k-limitation: #f08a3c;
+  --k-concept: #9a9ca1;
+  --k-background: #c2ac8a;
+}
+
+/* ============ Palettes ============
+   Light and dark each have their own set; the mode picks the branch and the
+   palette only repaints surfaces, text and the accent. Argument-role hues and
+   status colours stay shared so maps and checks read the same everywhere. */
+
+/* 纸本: warm paper with a teal accent, after EasyRead's book page. */
+:root[data-palette="paper"] {
+  --bg: #f6f3ec;
+  --surface: #fbf9f4;
+  --sunken: #efebe2;
+  --sidebar: #f1ede4;
+  --hover: #e9e4d8;
+  --border: #e2dccf;
+  --border-strong: #cfc6b5;
+  --text: #23211d;
+  --text-2: #57524a;
+  --muted: #847e73;
+  --accent: #2d6173;
+  --accent-soft: #e2eaea;
+  --on-accent: #fbf9f4;
+  --mark: #f5e6a3;
+  --edge: #c6bfb2;
+  --grid: #e6e0d4;
+  --shadow: 0 1px 2px #23211d0a, 0 6px 24px #23211d14;
+  --mine: #9c5f1c;
+  --mine-soft: #f3e7d6;
+}
+/* 青瓷: cool grey-green, quiet for long sessions. */
+:root[data-palette="celadon"] {
+  --bg: #f3f6f4;
+  --surface: #fafcfb;
+  --sunken: #e9efec;
+  --sidebar: #edf2ef;
+  --hover: #e2eae6;
+  --border: #d9e2dd;
+  --border-strong: #c3cfc8;
+  --text: #1d2622;
+  --text-2: #4c5953;
+  --muted: #7b8782;
+  --accent: #2f7a63;
+  --accent-soft: #e0eee8;
+  --on-accent: #ffffff;
+  --mark: #f3ea9c;
+  --edge: #bccac3;
+  --grid: #dfe7e3;
+}
+/* 素白: pure neutral grey with an ink-black accent. */
+:root[data-palette="mono-light"] {
+  --bg: #fafafa;
+  --surface: #ffffff;
+  --sunken: #f2f2f2;
+  --sidebar: #f5f5f5;
+  --hover: #ececec;
+  --border: #e4e4e4;
+  --border-strong: #cfcfcf;
+  --text: #1a1a1a;
+  --text-2: #525252;
+  --muted: #858585;
+  --accent: #2b2b2b;
+  --accent-soft: #ececec;
+  --on-accent: #ffffff;
+  --edge: #c4c4c4;
+  --grid: #e8e8e8;
+}
+
+/* 陶土: ivory paper, slate ink and a clay accent — an editorial, bookish feel. */
+:root[data-palette="clay"] {
+  --bg: #faf9f5;
+  --surface: #fffefb;
+  --sunken: #f2f0e8;
+  --sidebar: #f3f1ea;
+  --hover: #ebe8de;
+  --border: #e6e2d6;
+  --border-strong: #d3cdbd;
+  --text: #191915;
+  --text-2: #55534b;
+  --muted: #7a776d;
+  --accent: #a24a2e;
+  --accent-soft: #f6e6dd;
+  --on-accent: #fffefb;
+  --mark: #f6e3a1;
+  --edge: #cbc5b6;
+  --grid: #e9e5da;
+  --shadow: 0 1px 2px #19191508, 0 8px 28px #19191512;
+  --mine: #8f5a1d;
+  --mine-soft: #f3e8d6;
+}
+
+/* 暖夜: warm black, like paper under a desk lamp. */
+:root[data-palette="lamp"] {
+  --bg: #1a1917;
+  --surface: #211f1c;
+  --sunken: #262420;
+  --sidebar: #1d1c19;
+  --hover: #2c2a26;
+  --border: #34312c;
+  --border-strong: #45413a;
+  --text: #e6e1d6;
+  --text-2: #b9b2a5;
+  --muted: #8c8579;
+  --accent: #7fb2c2;
+  --accent-soft: #1f3036;
+  --on-accent: #10191c;
+  --mark: #4d4321;
+  --edge: #4c4840;
+  --grid: #2a2824;
+  --mine: #d6a064;
+  --mine-soft: #3a2c1d;
+}
+/* 深海: deep blue-violet with a cool accent. */
+:root[data-palette="midnight"] {
+  --bg: #11131f;
+  --surface: #171a29;
+  --sunken: #1c2031;
+  --sidebar: #141725;
+  --hover: #23283c;
+  --border: #2a2f45;
+  --border-strong: #3a4060;
+  --text: #e3e5f2;
+  --text-2: #adb1cc;
+  --muted: #7f84a3;
+  --accent: #9c9cf5;
+  --accent-soft: #262a4a;
+  --on-accent: #12142a;
+  --mark: #4a4220;
+  --edge: #444a68;
+  --grid: #20243a;
+}
+/* 窑火: warm charcoal with an ember accent, the night side of 陶土. */
+:root[data-palette="kiln"] {
+  --bg: #1c1b19;
+  --surface: #23221f;
+  --sunken: #292724;
+  --sidebar: #1f1e1b;
+  --hover: #2f2d29;
+  --border: #36332e;
+  --border-strong: #48443d;
+  --text: #f0ece2;
+  --text-2: #bdb6a8;
+  --muted: #8d877b;
+  --accent: #e08a66;
+  --accent-soft: #3a2820;
+  --on-accent: #1c1b19;
+  --mark: #4f4320;
+  --edge: #4e4a42;
+  --grid: #2b2926;
+  --mine: #dba66a;
+  --mine-soft: #3a2c1d;
+}
+/* 纯黑: grayscale for OLED screens and minimal distraction. */
+:root[data-palette="mono-dark"] {
+  --bg: #0e0e0e;
+  --surface: #161616;
+  --sunken: #1c1c1c;
+  --sidebar: #121212;
+  --hover: #242424;
+  --border: #2a2a2a;
+  --border-strong: #3a3a3a;
+  --text: #e8e8e8;
+  --text-2: #b0b0b0;
+  --muted: #808080;
+  --accent: #e0e0e0;
+  --accent-soft: #2a2a2a;
+  --on-accent: #111111;
+  --edge: #444444;
+  --grid: #1f1f1f;
+}

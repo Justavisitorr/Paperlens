@@ -1,0 +1,239 @@
+.pdf-source {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 0;
+  min-width: 0;
+  background: var(--surface, #faf9f6);
+  color: var(--text, #242b31);
+}
+.pdf-source-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 16px 18px 12px;
+  border-bottom: 1px solid var(--border, #dfdfdc);
+}
+.pdf-source-header strong {
+  font-size: 15px;
+}
+.pdf-source-header-actions {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.pdf-source .pdf-follow {
+  font-size: 11px;
+  white-space: nowrap;
+}
+.pdf-source .pdf-follow[aria-pressed="true"] {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+.pdf-source-header small {
+  display: block;
+  margin-top: 4px;
+  color: var(--muted, #767a80);
+  font-size: 11px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 280px;
+}
+.pdf-source button {
+  background: transparent;
+  color: inherit;
+  border: 1px solid var(--border, #dededb);
+  border-radius: 6px;
+  min-height: 30px;
+  padding: 3px 9px;
+  cursor: pointer;
+}
+.pdf-source button:disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+.pdf-source button:hover:enabled {
+  background: var(--hover, #eeefed);
+}
+.pdf-source-toolbar {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
+  padding: 10px 12px 4px;
+  font-size: 11px;
+}
+.pdf-source-toolbar label {
+  white-space: nowrap;
+}
+.pdf-source-toolbar input {
+  width: 40px;
+  background: transparent;
+  color: inherit;
+  border: 0;
+  text-align: center;
+  font: inherit;
+}
+.pdf-source-toolbar-gap {
+  flex: 1;
+}
+.pdf-source-label {
+  padding: 5px 16px 10px;
+  color: var(--muted, #767a80);
+  font-size: 11px;
+}
+.pdf-source-scroll {
+  position: relative;
+  flex: 1;
+  overflow: auto;
+  scrollbar-gutter: stable;
+  padding: 20px;
+  background: var(--pdf-background, #e9e9e5);
+  min-height: 0;
+  overscroll-behavior: contain;
+}
+.pdf-source-page {
+  position: relative;
+  flex: none;
+  margin: 0 auto;
+  background: #fff;
+  box-shadow: 0 2px 9px #0002;
+}
+.pdf-source-page > canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.pdf-source-status {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  height: 0;
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.7;
+  padding: 0;
+}
+.pdf-source-highlight {
+  position: absolute;
+  box-sizing: border-box;
+  border: 2px solid #c89d29;
+  background: #eac34b33;
+  pointer-events: none;
+  z-index: 4;
+}
+.pdf-native-text {
+  position: absolute;
+  inset: 0;
+  text-align: initial;
+  overflow: clip;
+  line-height: 1;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-size-adjust: none;
+  forced-color-adjust: none;
+  transform-origin: 0 0;
+  z-index: 2;
+  --min-font-size: 1;
+  --scale-round-x: 1px;
+  --scale-round-y: 1px;
+  --text-scale-factor: calc(var(--total-scale-factor) * var(--min-font-size));
+  --min-font-size-inv: calc(1 / var(--min-font-size));
+}
+.pdf-native-text[data-main-rotation="90"] {
+  transform: rotate(90deg) translateY(-100%);
+}
+.pdf-native-text[data-main-rotation="180"] {
+  transform: rotate(180deg) translate(-100%, -100%);
+}
+.pdf-native-text[data-main-rotation="270"] {
+  transform: rotate(270deg) translateX(-100%);
+}
+.pdf-native-text :is(span, br) {
+  color: transparent;
+  position: absolute;
+  white-space: pre;
+  cursor: text;
+  transform-origin: 0 0;
+  user-select: text;
+}
+.pdf-native-text > :not(.markedContent),
+.pdf-native-text .markedContent span:not(.markedContent) {
+  z-index: 1;
+  --font-height: 0;
+  font-size: calc(var(--text-scale-factor) * var(--font-height));
+  --scale-x: 1;
+  --rotate: 0deg;
+  transform: rotate(var(--rotate)) scaleX(var(--scale-x)) scale(var(--min-font-size-inv));
+}
+.pdf-native-text .markedContent {
+  display: contents;
+}
+.pdf-native-text ::selection,
+.pdf-ocr-text ::selection {
+  background: #3f80ca66;
+  color: transparent;
+}
+.pdf-ocr-text {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  pointer-events: none;
+}
+.pdf-ocr-text span {
+  position: absolute;
+  color: transparent;
+  line-height: 1;
+  white-space: pre;
+  overflow: hidden;
+  cursor: text;
+  user-select: text;
+  pointer-events: auto;
+}
+.pdf-source-note {
+  margin: 0;
+  padding: 8px 16px;
+  color: var(--muted, #767a80);
+  font-size: 11px;
+}
+.pdf-source-fallback {
+  max-width: 100%;
+  display: block;
+}
+.pdf-crop {
+  display: block;
+  width: 100%;
+  height: auto;
+  background: #fff;
+}
+.pdf-crop-unavailable {
+  display: block;
+  padding: 18px;
+  color: var(--muted, #767a80);
+  font-size: 12px;
+}
+[data-theme="dark"] .pdf-source-scroll {
+  --pdf-background: #25282a;
+}
+@media (max-width: 720px) {
+  .pdf-source-header {
+    padding: 12px;
+  }
+  .pdf-source-scroll {
+    padding: 12px;
+  }
+  .pdf-source-toolbar {
+    gap: 4px;
+  }
+  .pdf-source-header small {
+    display: none;
+  }
+  .pdf-source-label {
+    padding-bottom: 4px;
+  }
+  .pdf-source-scroll {
+    padding: 8px;
+  }
+}

@@ -1,0 +1,28 @@
+.citation-copy {
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: wrap;
+  min-width: 0;
+  max-width: 100%;
+}
+.citation-copy-manual {
+  flex-basis: 100%;
+  display: grid;
+  gap: 0.5rem;
+  margin-block: 0.5rem;
+  max-width: 100%;
+  font-size: var(--font-small, 0.875rem);
+}
+.citation-copy-manual textarea {
+  display: block;
+  width: min(38rem, 100%);
+  min-width: 0;
+  min-height: 7rem;
+  max-height: 18rem;
+  resize: vertical;
+  font-family: var(--font-mono, monospace);
+  font-size: 0.875rem;
+}
+.citation-copy-manual .text-button {
+  justify-self: start;
+}

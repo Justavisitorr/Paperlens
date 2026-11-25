@@ -1,0 +1,65 @@
+.quality-warning-group {
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border);
+}
+.quality-warning-group:last-child {
+  border-bottom: 0;
+}
+.quality-warning-group summary {
+  cursor: pointer;
+  color: var(--text);
+}
+.quality-warning-group summary > small {
+  float: right;
+  color: var(--text-2);
+  font-size: 12px;
+}
+.quality-warning-group summary > span {
+  display: block;
+  margin: 5px 0 0;
+  color: var(--text-2);
+  font-size: 13px;
+  overflow-wrap: anywhere;
+}
+.quality-warning-group .plain-list {
+  margin: 8px 0 0;
+}
+.failure-details {
+  margin-top: 10px;
+  font-size: 14px;
+  color: var(--text);
+  overflow-wrap: anywhere;
+}
+.failure-details summary {
+  cursor: pointer;
+  width: fit-content;
+  max-width: 100%;
+  color: var(--text-2);
+}
+.failure-details ul {
+  list-style: none;
+  margin: 12px 0 0;
+  padding: 0;
+}
+.failure-details li + li {
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px solid var(--border);
+}
+.failure-details p {
+  margin: 5px 0;
+  line-height: 1.6;
+}
+.failure-details .failure-scope {
+  font-size: 12px;
+  color: var(--text-2);
+}
+.failure-details .failure-guidance {
+  color: var(--text-2);
+}
+@media (max-width: 600px) {
+  .job:has(.failure-details) .job-actions {
+    flex-basis: 100%;
+    justify-content: flex-end;
+  }
+}

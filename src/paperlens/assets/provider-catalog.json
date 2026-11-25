@@ -1,0 +1,92 @@
+{
+  "schema_version": 1,
+  "provider": "deepseek",
+  "base_url": "https://api.deepseek.com",
+  "currency": "USD",
+  "checked_at": "2026-09-24T15:09:29.781370Z",
+  "models": [
+    {
+      "id": "deepseek-flash",
+      "name": "DeepSeek-V4.1-Flash",
+      "provider": "deepseek",
+      "context_window_tokens": 1048576,
+      "max_output_tokens": 393216,
+      "vision": "supported",
+      "json_output": "supported",
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "reasoning_efforts": [
+        "low",
+        "high",
+        "max"
+      ],
+      "prices": {
+        "off_peak": {
+          "input_cache_hit": "0.003",
+          "input_cache_miss": "0.15",
+          "output": "0.6"
+        },
+        "peak": {
+          "input_cache_hit": "0.006",
+          "input_cache_miss": "0.3",
+          "output": "1.2"
+        }
+      },
+      "sources": [
+        "https://api-docs.deepseek.com/quick_start/pricing/",
+        "https://api-docs.deepseek.com/api/list-models/",
+        "https://api-docs.deepseek.com/guides/vision/"
+      ]
+    },
+    {
+      "id": "deepseek-v4-pro",
+      "name": "DeepSeek-V4-Pro-0813",
+      "provider": "deepseek",
+      "context_window_tokens": 1048576,
+      "max_output_tokens": 393216,
+      "vision": "unsupported",
+      "json_output": "supported",
+      "input_modalities": [
+        "text"
+      ],
+      "reasoning_efforts": [
+        "low",
+        "high",
+        "max"
+      ],
+      "prices": {
+        "off_peak": {
+          "input_cache_hit": "0.022",
+          "input_cache_miss": "0.66",
+          "output": "1.98"
+        },
+        "peak": {
+          "input_cache_hit": "0.044",
+          "input_cache_miss": "1.32",
+          "output": "3.96"
+        }
+      },
+      "sources": [
+        "https://api-docs.deepseek.com/quick_start/pricing/",
+        "https://api-docs.deepseek.com/api/list-models/",
+        "https://api-docs.deepseek.com/guides/vision/"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://api-docs.deepseek.com/quick_start/pricing/",
+      "sha256": "210f102275ccf1a6542f08a3bc9e4b4c7c83278cb74b35217bffa112df6363b2"
+    },
+    {
+      "url": "https://api-docs.deepseek.com/api/list-models/",
+      "sha256": "41551c3c498a93b6e6459eaeee89829940ca8acf999b24436a38a2231c7e091b"
+    },
+    {
+      "url": "https://api-docs.deepseek.com/guides/vision/",
+      "sha256": "5654a198302edd80aea443fb123d14b14d675ccc76730959dd55414d9baee1e2"
+    }
+  ]
+}

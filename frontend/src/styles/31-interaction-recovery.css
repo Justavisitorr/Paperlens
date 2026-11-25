@@ -1,0 +1,22 @@
+.chat-deleted {
+  margin: 8px 12px;
+  padding: 10px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  max-height: 32vh;
+  overflow: auto;
+}
+.chat-deleted > summary {
+  cursor: pointer;
+  font-weight: 600;
+}
+.chat-deleted .undo-bar {
+  margin: 6px 0;
+}
+.chat-deleted .undo-bar > span {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.chat-deleted button {
+  flex-shrink: 0;
+}

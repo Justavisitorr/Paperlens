@@ -1,0 +1,24 @@
+{
+  "papers": [
+    {
+      "id": "bert",
+      "title": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+      "source_page": "https://aclanthology.org/N19-1423/",
+      "split": "dev",
+      "language": "en",
+      "paper_type": "empirical",
+      "path": "examples/bert.pdf",
+      "sha256": "987545ffb087f1ece898142c403a516baeabeb70ce19089397fac6f7db12c3d4"
+    },
+    {
+      "id": "checklist",
+      "title": "Beyond Accuracy: Behavioral Testing of NLP Models with CheckList",
+      "source_page": "https://aclanthology.org/2020.acl-main.442/",
+      "split": "dev",
+      "language": "en",
+      "paper_type": "empirical",
+      "path": "examples/checklist.pdf",
+      "sha256": "98d15d259acf15136feed5cd5d4921b60cf313704a629901d115fe910fdb00e1"
+    }
+  ]
+}

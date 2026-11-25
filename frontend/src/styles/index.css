@@ -1,0 +1,28 @@
+/*
+ * PaperLens — one quiet surface, one accent, colour only where it carries meaning.
+ *
+ * Imported in cascade order; later files may override earlier ones. Put new
+ * feature styles in their own file before motion/focus/responsive.
+ */
+
+@import "./01-tokens.css";
+@import "./02-base.css";
+@import "./03-primitives.css";
+@import "./04-shell.css";
+@import "./05-pages.css";
+@import "./06-reader.css";
+@import "./07-graph.css";
+@import "./08-evidence.css";
+@import "./09-views.css";
+@import "./10-overlays.css";
+@import "./11-collections.css";
+@import "./12-chat.css";
+@import "./13-annotations.css";
+@import "./14-motion.css";
+@import "./15-focus.css";
+@import "./16-responsive.css";
+@import "./21-library.css";
+@import "./22-import.css";
+@import "./28-term-translations.css";
+@import "./29-term-sidebar-layout.css";
+@import "./33-editorial.css";

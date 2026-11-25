@@ -1,0 +1,324 @@
+.reading-note-card,
+.note-composer {
+  font: 13px / 1.65 var(--font);
+  color: var(--text);
+  background: var(--surface, var(--bg));
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 14px;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.reading-note-card {
+  width: 300px;
+  max-width: 100%;
+}
+.reading-note-card[data-mark-color="yellow"] {
+  --note-mark: #c79824;
+}
+.reading-note-card[data-mark-color="green"] {
+  --note-mark: #41936c;
+}
+.reading-note-card[data-mark-color="blue"] {
+  --note-mark: #578ad7;
+}
+.reading-note-card[data-mark-color="pink"] {
+  --note-mark: #c66e99;
+}
+.reading-note-card[data-mark-color] {
+  border-left: 3px solid var(--note-mark);
+}
+.reading-note-card[data-mark-color] blockquote {
+  border-color: var(--note-mark);
+}
+.reading-note-card[data-mark-style="highlight"] blockquote {
+  background: color-mix(in srgb, var(--note-mark) 12%, transparent);
+}
+.note-mark-settings {
+  margin: 8px 0;
+}
+.note-mark-settings > summary {
+  cursor: pointer;
+  color: var(--text-2);
+  font-size: 12px;
+}
+.note-mark-settings .annotation-picker {
+  margin: 10px 0;
+}
+.note-composer {
+  position: fixed;
+  z-index: 70;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  width: min(440px, calc(100vw - 32px));
+  max-height: calc(100dvh - 80px);
+  overflow-y: auto;
+  box-shadow: 0 12px 50px #0003;
+}
+.reading-note-card.note-ai {
+  border-left: 3px solid var(--accent);
+}
+.reading-note-card.note-question {
+  border-left: 3px solid var(--accent);
+}
+.reading-note-card.note-check {
+  border-left: 3px solid #bf8a36;
+}
+.reading-note-head {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+.reading-note-head strong {
+  font-size: 12px;
+}
+.reading-note-head > button:last-child {
+  margin-left: auto;
+}
+.reading-note-head .note-status,
+.note-model,
+.note-composer-hint {
+  color: var(--text-2);
+  font-size: 11px;
+}
+.reading-note-card blockquote,
+.note-composer blockquote {
+  margin: 8px 0 12px;
+  border-left: 2px solid var(--border);
+  padding-left: 10px;
+  color: var(--text-2);
+  white-space: pre-wrap;
+  max-height: 130px;
+  overflow: auto;
+}
+.reading-note-body .md > :first-child {
+  margin-top: 0;
+}
+.reading-note-body .md > :last-child {
+  margin-bottom: 0;
+}
+.reading-note-body.is-collapsed {
+  max-height: 220px;
+  overflow: hidden;
+  mask-image: linear-gradient(to bottom, black 80%, transparent);
+}
+.reading-note-body math {
+  max-width: 100%;
+  overflow-x: auto;
+}
+.reading-note-actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px 12px;
+  margin-top: 12px;
+}
+.reading-note-actions .text-button {
+  font-size: 11px;
+}
+.note-expand {
+  font-size: 12px;
+  margin-top: 5px;
+}
+.note-source-warning {
+  font-size: 11px;
+  color: var(--text-2);
+}
+.is-detached {
+  border-style: dashed;
+}
+.note-reply-question {
+  font-size: 12px;
+  color: var(--text-2);
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 10px;
+}
+.note-reply-question > span {
+  font-weight: 600;
+}
+.note-evidence {
+  margin-top: 8px;
+  font-size: 11px;
+  color: var(--text-2);
+}
+.note-evidence summary {
+  cursor: pointer;
+}
+.note-evidence blockquote > span {
+  display: block;
+  font-size: 10px;
+}
+.note-kind-switch {
+  display: flex;
+  gap: 6px;
+  margin: 10px 0;
+}
+.auto-note-plan {
+  display: grid;
+  gap: 8px;
+}
+.auto-note-plan > div {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+.auto-note-plan dt {
+  color: var(--text-2);
+}
+.auto-note-plan dd {
+  margin: 0;
+}
+.auto-note-composer .reading-note-actions {
+  justify-content: space-between;
+}
+.note-kind-switch [aria-pressed="true"] {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+.note-composer textarea,
+.note-followup textarea {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  resize: vertical;
+  min-height: 74px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--bg);
+  color: var(--text);
+  padding: 10px;
+  font: inherit;
+}
+.note-composer-hint {
+  margin: 6px 0;
+}
+.note-followup {
+  margin-top: 10px;
+  display: grid;
+  gap: 8px;
+}
+.note-followup button {
+  justify-self: end;
+}
+.note-pending {
+  border-top: 1px solid var(--border);
+  margin-top: 12px;
+  padding-top: 10px;
+  font-size: 12px;
+}
+.note-stream-preview {
+  white-space: pre-wrap;
+  max-height: 200px;
+  overflow: auto;
+}
+.note-replies {
+  margin-top: 12px;
+  display: grid;
+  gap: 10px;
+}
+.note-replies .reading-note-card {
+  width: auto;
+}
+.reading-notes-panel {
+  position: fixed;
+  top: 60px;
+  right: 0;
+  bottom: 0;
+  z-index: 45;
+  display: flex;
+  flex-direction: column;
+  width: 390px;
+  max-width: 100vw;
+  min-height: 0;
+  height: auto;
+  background: var(--bg);
+  color: var(--text);
+  border-left: 1px solid var(--border);
+  font: 13px / 1.65 var(--font);
+}
+.reading-notes-panel-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+  border-bottom: 1px solid var(--border);
+}
+.reading-notes-panel-head strong > span {
+  color: var(--text-2);
+  margin-left: 4px;
+}
+.reading-notes-controls {
+  padding: 12px 16px;
+  display: grid;
+  gap: 8px;
+}
+.reading-notes-controls input,
+.reading-notes-controls select {
+  box-sizing: border-box;
+  width: 100%;
+  border: 1px solid var(--border);
+  background: var(--surface, var(--bg));
+  color: var(--text);
+  border-radius: 6px;
+  padding: 8px 10px;
+  font: inherit;
+}
+.notes-sync-status {
+  color: var(--text-2);
+  font-size: 11px;
+}
+.notes-sync-status p {
+  margin: 0 0 5px;
+}
+.reading-notes-list {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  padding: 0 12px 16px;
+}
+.notes-panel-entry {
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
+  margin-bottom: 10px;
+}
+.notes-panel-entry .reading-note-card {
+  flex: 1;
+  width: auto;
+}
+.note-export-select {
+  padding-top: 12px;
+}
+.notes-empty {
+  padding: 20px 10px;
+  color: var(--text-2);
+}
+.reading-notes-export {
+  border-top: 1px solid var(--border);
+  padding: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+.reading-notes-export label {
+  flex: 1;
+  white-space: nowrap;
+  font-size: 11px;
+}
+@media (max-width: 700px) {
+  .reading-note-card,
+  .note-composer {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .note-composer {
+    width: calc(100vw - 24px);
+  }
+  .reading-notes-panel {
+    width: 100vw;
+  }
+}

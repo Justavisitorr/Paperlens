@@ -1,0 +1,12 @@
+# Replace only after the production host, domain and ICP filing are confirmed.
+{$PAPERLENS_DOMAIN} {
+    encode zstd gzip
+    request_body {
+        max_size 3GB
+    }
+    reverse_proxy 127.0.0.1:8080 {
+        # The application trusts this single header only from the configured proxy.
+        # Overwrite it rather than accepting a visitor-supplied forwarding chain.
+        header_up X-Forwarded-For {remote_host}
+    }
+}

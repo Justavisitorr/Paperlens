@@ -1,0 +1,23 @@
+services:
+  paperlens:
+    build:
+      context: ../..
+      dockerfile: deploy/standalone/Dockerfile
+    command: ["python", "-m", "paperlens.standalone", "--data", "/data", "--origin", "${PAPERLENS_ORIGIN:?Set the final HTTPS origin}", "--host", "0.0.0.0", "--port", "8080"]
+    env_file:
+      - ${PAPERLENS_ENV_FILE:?Set the private standalone environment file}
+    # The reverse proxy runs on the host. The application port is never public.
+    ports:
+      - "127.0.0.1:8080:8080"
+    volumes:
+      - ${PAPERLENS_DATA_DIRECTORY:?Set an empty dedicated data directory}:/data
+      - ${PAPERLENS_SECRETS_DIRECTORY:?Set the private credentials directory}:/run/paperlens-secrets:ro
+    restart: unless-stopped
+    stop_grace_period: 90s
+    security_opt:
+      - no-new-privileges:true
+    cap_drop: [ALL]
+    pids_limit: 512
+    tmpfs:
+      - /tmp:size=256m,mode=1777
+    # Paths are exclusively for this app; do not attach the existing Sites directory.

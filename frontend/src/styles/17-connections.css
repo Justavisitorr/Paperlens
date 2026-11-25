@@ -1,0 +1,146 @@
+/* Model setup uses the workspace's existing colors and controls. */
+.connection-heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 12px;
+}
+.connection-heading > div {
+  min-width: 0;
+}
+.connection-heading > button {
+  flex-shrink: 0;
+}
+.connection-list {
+  display: grid;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+.connection-card {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  padding: 12px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+}
+.connection-card-info {
+  min-width: 0;
+  flex: 1;
+  display: grid;
+  gap: 3px;
+}
+.connection-card-info small {
+  color: var(--muted);
+  font-size: var(--fs-sm);
+  overflow-wrap: anywhere;
+}
+.connection-url {
+  font-family: var(--mono);
+}
+.connection-editor {
+  padding: 16px;
+  margin: 12px 0;
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius);
+  background: var(--surface);
+}
+.connection-editor h3,
+.model-role h3 {
+  font-size: var(--fs);
+}
+.model-connections details summary {
+  cursor: pointer;
+  color: var(--text-2);
+  font-size: var(--fs-sm);
+  padding: 8px 0;
+}
+.connection-form-actions,
+.connection-save {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.connection-form-actions {
+  margin-top: 14px;
+}
+.connection-save {
+  padding: 12px 0 24px;
+}
+.connection-save > p {
+  width: 100%;
+  font-size: var(--fs-sm);
+}
+.connection-model-select {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+}
+.connection-model-select select {
+  min-width: 0;
+  flex: 1;
+}
+.connection-model-select button {
+  flex-shrink: 0;
+}
+.model-role {
+  border-top: 1px solid var(--border);
+  padding: 16px 0;
+}
+.model-role:first-of-type {
+  border-top: 0;
+}
+.connection-manual {
+  margin-left: 200px;
+}
+.connection-manual .field {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.vision-confirmation {
+  margin: 8px 0 0 200px;
+  font-size: var(--fs-sm);
+}
+.vision-confirmation label {
+  display: block;
+}
+.vision-confirmation input {
+  margin-right: 8px;
+}
+.vision-confirmation small {
+  display: block;
+  color: var(--muted);
+  margin-top: 4px;
+}
+@media (max-width: 680px) {
+  .connection-heading {
+    flex-wrap: wrap;
+  }
+  .model-connections .field {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .model-connections .field-help,
+  .model-connections .field-error {
+    grid-column: 1;
+  }
+  .model-connections .field input,
+  .model-connections .field select {
+    max-width: none;
+  }
+  .connection-manual,
+  .vision-confirmation {
+    margin-left: 0;
+  }
+  .job {
+    flex-wrap: wrap;
+  }
+  .job-actions {
+    margin-left: auto;
+  }
+}

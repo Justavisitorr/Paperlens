@@ -1,0 +1,10 @@
+* text=auto eol=lf
+*.cmd text eol=crlf
+*.ps1 text eol=crlf
+*.pdf binary
+*.png binary
+*.ico binary
+docs/third_party/** -text
+packaging/licenses/** -text
+src/paperlens/assets/dashboard.html -text
+src/paperlens/assets/THIRD_PARTY_NOTICES.txt -text

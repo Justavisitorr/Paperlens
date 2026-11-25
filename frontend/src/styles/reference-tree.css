@@ -1,0 +1,156 @@
+.modal-backdrop.reference-tree-backdrop {
+  z-index: 180;
+  padding: 24px;
+}
+.reference-tree-dialog {
+  width: min(900px, 100%);
+  max-height: min(900px, 90dvh);
+  min-height: 280px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background: var(--bg);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  box-shadow: 0 24px 90px #0003;
+  font: 15px / 1.6 var(--font);
+}
+.reference-tree-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding: 20px 24px;
+  border-bottom: 1px solid var(--border);
+  flex-shrink: 0;
+}
+.reference-tree-heading h2 {
+  margin: 0;
+  font-size: 22px;
+}
+.reference-tree-heading p {
+  margin: 3px 0 0;
+  color: var(--text-2);
+  font-size: 13px;
+}
+.reference-tree-heading > button {
+  font-size: 24px;
+  min-width: 40px;
+  min-height: 40px;
+}
+.reference-tree-scroll {
+  padding: 20px 24px 32px;
+  overflow: auto;
+  overscroll-behavior: contain;
+  min-width: 0;
+}
+.reference-tree-intro {
+  margin: 0 0 20px;
+  color: var(--text-2);
+  font-size: 13px;
+}
+.reference-tree-root {
+  padding: 16px;
+  border-radius: 10px;
+  background: var(--surface, var(--bg));
+  border: 1px solid var(--border);
+  overflow-wrap: anywhere;
+}
+.reference-tree-source {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+  margin: 10px 0 14px;
+  color: var(--text-2);
+  font-size: 12px;
+}
+.reference-tree-source a {
+  color: var(--text-2);
+  text-underline-offset: 3px;
+}
+.reference-tree-list {
+  list-style: none;
+  margin: 0;
+  padding: 0 0 0 18px;
+  border-left: 1px solid var(--border);
+}
+.reference-tree-entry {
+  position: relative;
+  margin: 0 0 10px;
+  min-width: 0;
+}
+.reference-tree-entry::before {
+  content: "";
+  position: absolute;
+  left: -18px;
+  top: 24px;
+  width: 14px;
+  border-top: 1px solid var(--border);
+}
+.reference-tree-card {
+  padding: 12px 14px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  min-width: 0;
+}
+.reference-tree-title {
+  display: block;
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 550;
+  overflow-wrap: anywhere;
+}
+.reference-tree-title:hover {
+  text-decoration: underline;
+}
+.reference-tree-meta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px 14px;
+  margin-top: 6px;
+  color: var(--text-2);
+  font-size: 12px;
+}
+.reference-tree-meta button {
+  margin-left: auto;
+}
+.reference-tree-message {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 0;
+  color: var(--text-2);
+  font-size: 13px;
+}
+.reference-tree-entry > .reference-tree-branch {
+  margin: 12px 0 14px;
+}
+.reference-tree-more {
+  margin: 6px 0 12px;
+}
+@media (max-width: 600px) {
+  .modal-backdrop.reference-tree-backdrop {
+    padding: 8px;
+  }
+  .reference-tree-dialog {
+    max-height: 96dvh;
+    border-radius: 12px;
+  }
+  .reference-tree-heading,
+  .reference-tree-scroll {
+    padding: 14px;
+  }
+  .reference-tree-list {
+    padding-left: 9px;
+  }
+  .reference-tree-entry::before {
+    left: -9px;
+    width: 6px;
+  }
+  .reference-tree-card {
+    padding: 10px;
+  }
+}

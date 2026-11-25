@@ -1,0 +1,185 @@
+/* ============ Editorial layer ============
+   Display headings in a book serif, a quiet eyebrow above them, and roomier
+   cards. Loaded last so it refines every palette without touching colours;
+   the 陶土 / 窑火 palettes in 01-tokens.css pair with it. */
+
+:root {
+  /* Latin glyphs take Georgia; CJK falls through to a real serif when one is
+     installed, otherwise to the UI sans rather than a fake-bold SimSun. */
+  --display:
+    Georgia, "Noto Serif SC", "Source Han Serif SC", "Songti SC", "Microsoft YaHei", serif;
+  --radius-lg: 14px;
+  --lift:
+    0 1px 2px color-mix(in srgb, var(--text) 4%, transparent),
+    0 10px 30px -12px color-mix(in srgb, var(--text) 18%, transparent);
+}
+
+/* Page heads: one serif title, a small accent eyebrow, generous air. */
+.page-head h1,
+.chat-welcome h2,
+.reading-overview > header h2 {
+  font-family: var(--display);
+  font-weight: 600;
+  letter-spacing: -0.012em;
+  line-height: 1.2;
+  text-wrap: balance;
+}
+.page-head h1 {
+  font-size: 32px;
+}
+.page-head > div > p:last-child {
+  margin-top: 8px;
+}
+.page-eyebrow,
+.page-head .page-eyebrow,
+.reading-overview > header .eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 0 10px;
+  color: var(--accent);
+  font-size: 11.5px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+}
+.page-eyebrow::before,
+.reading-overview > header .eyebrow::before {
+  content: "";
+  width: 18px;
+  height: 1px;
+  background: currentColor;
+  opacity: 0.6;
+}
+
+/* Reading overview: a lede set like a magazine standfirst, then sections
+   separated by hairlines with small labels instead of competing headings. */
+.reading-overview {
+  max-width: 760px;
+  padding-top: 12px;
+}
+.reading-overview > header {
+  margin-bottom: 32px;
+}
+.reading-overview > header h2 {
+  font-size: 34px;
+}
+.reading-overview > header .review-status-note {
+  margin-top: 10px;
+  font-size: var(--fs-md);
+}
+.reading-overview > section {
+  margin-bottom: 0;
+  padding: 22px 0;
+  border-top: 1px solid var(--border);
+}
+.reading-overview > section > h3,
+.overview-card-section h3 {
+  margin-bottom: 10px;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+}
+.reading-overview .lede {
+  font-family: var(--display);
+  font-size: 21px;
+  line-height: 1.65;
+  color: var(--text);
+}
+.reading-overview > section > p {
+  font-size: var(--fs-read);
+  line-height: 1.8;
+}
+.reading-overview .overview-actions {
+  margin-bottom: 0;
+  padding: 2px 0 24px;
+}
+.reading-overview .overview-card-section {
+  padding: 22px 0;
+  border-top: 1px solid var(--border);
+}
+.reading-overview .steps li {
+  line-height: 1.8;
+}
+
+/* Buttons: rounder, with a touch more weight on the primary one. */
+.button {
+  border-radius: 9px;
+}
+.button.primary {
+  box-shadow: 0 1px 0 color-mix(in srgb, var(--text) 30%, transparent);
+}
+.reading-overview .overview-actions .button {
+  padding: 9px 16px;
+}
+
+/* Cards: term book and library rows rise slightly under the pointer. */
+.saved-term {
+  border-radius: var(--radius-lg);
+  padding: 18px 18px 14px;
+}
+.saved-term:hover {
+  border-color: var(--border-strong);
+  box-shadow: var(--lift);
+}
+.saved-term-head h3 {
+  font-family: var(--display);
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: -0.005em;
+}
+.saved-term-pending {
+  border-radius: 10px;
+}
+.saved-term-note {
+  border-radius: 0 10px 10px 0;
+}
+.saved-term-quote {
+  border-radius: 10px;
+  font-family: var(--display);
+  font-style: italic;
+}
+.library-page .paper-row {
+  border-radius: 12px;
+  transition:
+    background 0.15s,
+    box-shadow 0.2s,
+    border-color 0.15s;
+}
+.library-page .paper-row:hover {
+  border-color: var(--border);
+  box-shadow: var(--lift);
+}
+.library-cover {
+  border-radius: 4px;
+  box-shadow:
+    0 1px 2px #0000000d,
+    3px 4px 0 -1px color-mix(in srgb, var(--border-strong) 70%, transparent);
+}
+.library-tabs button {
+  border-radius: 999px;
+  padding: 6px 14px;
+}
+
+/* Chat welcome reads like a page title, not a dialog. */
+.chat-welcome h2 {
+  font-size: 30px;
+}
+.chat-welcome > p {
+  font-size: var(--fs-md);
+}
+
+@media (max-width: 720px) {
+  .page-head h1 {
+    font-size: 26px;
+  }
+  .reading-overview > header h2 {
+    font-size: 26px;
+  }
+  .reading-overview .lede {
+    font-size: 18px;
+  }
+  .chat-welcome h2 {
+    font-size: 24px;
+  }
+}

@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>账户 · PaperLens</title><link rel="stylesheet" href="/auth/assets/account.css">
+<script id="account-boot" type="application/json">__ACCOUNT_BOOT__</script>
+__WORKSPACE_BOOT__<script defer src="/auth/assets/account.js"></script></head>
+<body><main><a class="brand" href="/">▣ PaperLens</a>
+<section id="login"><p class="eyebrow">你的论文研究工作区</p><h1>继续阅读与发现</h1><p>使用自己的账户，保存论文、术语和阅读进度。</p></section>
+<section id="profile" hidden><p class="eyebrow">账户与资料</p><h1 id="name">我的工作区</h1><p id="identities"></p><p id="sync" role="status">正在连接资料…</p><div class="actions"><a class="primary" href="/">回到文献库</a><button id="sync-now">立即同步</button><button id="logout">退出登录</button></div></section>
+<section class="card"><h2 id="sign-title">邮箱登录</h2><form id="email-form"><label for="email">邮箱地址</label><div class="email-line"><input id="email" type="email" autocomplete="email" required placeholder="you@example.com" maxlength="254"><button type="submit" id="request">获取验证码</button></div></form>
+<form id="code-form" hidden><label for="code">6 位验证码</label><div class="email-line"><input id="code" inputmode="numeric" autocomplete="one-time-code" pattern="[0-9]{6}" maxlength="6" required><button type="submit" class="primary">确认</button></div></form><p id="mail-note" class="muted"></p><button id="github" hidden>使用 GitHub 继续</button></section>
+<p id="message" role="status" aria-live="polite"></p>
+<section class="card" id="conflict-section" hidden><h2>待确认的不同版本</h2><p>两边的修改都已保留。请选择这一项最终使用哪个版本；选择后刷新阅读页。</p><div id="conflicts"></div></section>
+<section class="card" id="migration" hidden><h2>迁移与备份</h2><p>整包包含论文原件、处理结果、恢复缓存和模型连接。用独立密码加密后下载；导入仅允许空工作区。</p><label for="passphrase">迁移包密码（至少 12 个字符）</label><input id="passphrase" type="password" autocomplete="new-password" minlength="12" maxlength="128"><div class="actions"><button id="export-workspace">下载加密资料包</button><label class="file-button">导入加密资料包<input id="import-workspace" type="file" accept=".plbackup" hidden></label></div><details><summary>浏览器资料单独迁移</summary><p>用于从旧网站转入术语、阅读进度和偏好。这份 JSON 含个人资料，请妥善保存。</p><div class="actions"><button id="export-browser">导出浏览器资料</button><label class="file-button">导入浏览器资料<input id="import-browser" type="file" accept=".json" hidden></label></div></details></section>
+<footer>模型调用使用你自己的 API 账户。新工作区默认使用 DeepSeek。</footer>
+</main></body></html>

@@ -1,0 +1,70 @@
+::highlight(reading-highlight-yellow) {
+  background-color: #f5d85b70;
+}
+::highlight(reading-highlight-green) {
+  background-color: #6fcf9770;
+}
+::highlight(reading-highlight-blue) {
+  background-color: #71b7f070;
+}
+::highlight(reading-highlight-pink) {
+  background-color: #ed99ba70;
+}
+::highlight(reading-underline-yellow) {
+  text-decoration: underline #bd8c15 2px;
+}
+::highlight(reading-underline-green) {
+  text-decoration: underline #41985e 2px;
+}
+::highlight(reading-underline-blue) {
+  text-decoration: underline #458dce 2px;
+}
+::highlight(reading-underline-pink) {
+  text-decoration: underline #c25b88 2px;
+}
+.reading-mark-menu {
+  position: fixed;
+  z-index: 120;
+  width: min(304px, calc(100vw - 32px));
+  padding: 12px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--surface, var(--bg));
+  box-shadow: 0 6px 28px #0002;
+  color: var(--text);
+}
+.reading-mark-menu .annotation-picker {
+  margin-bottom: 12px;
+}
+.reading-object-selection {
+  z-index: 120;
+  max-width: calc(100vw - 24px);
+  flex-wrap: wrap;
+}
+.reading-object-selection .annotation-colors {
+  padding: 0 4px;
+}
+
+.term-saved {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  min-height: 32px;
+  color: var(--text-2);
+  font: 12px / 1.4 var(--font);
+  white-space: nowrap;
+}
+.reading-mark-menu .reading-note-actions {
+  gap: 6px;
+  margin-top: 8px;
+}
+.reading-mark-menu .reading-note-actions .button {
+  min-height: 32px;
+  padding: 6px 8px;
+  font: 12px / 1.4 var(--font);
+}
+.reading-mark-menu [role="alert"] {
+  flex-basis: 100%;
+  margin: 4px 0 0;
+  font: 12px / 1.5 var(--font);
+}

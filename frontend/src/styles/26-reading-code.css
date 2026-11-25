@@ -1,0 +1,115 @@
+.reading-code-block {
+  margin: 1.3em 0;
+  min-width: 0;
+}
+.reading-code-listing {
+  position: relative;
+  min-width: 0;
+}
+.reading-code-listing > .para-actions {
+  position: sticky;
+  bottom: 12px;
+  z-index: 3;
+  max-width: 100%;
+}
+.reading-code-block .code-fragment {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+.reading-code-block figcaption {
+  margin-bottom: 0.65em;
+  font-size: 0.85em;
+  color: var(--text-2);
+}
+.code-frame {
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: var(--bg-2, var(--bg));
+}
+.code-toolbar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 18px;
+  font: 500 13px/1.5 var(--font-ui, sans-serif);
+  border-bottom: 1px solid var(--border);
+}
+.code-language {
+  flex: 1;
+}
+.code-language > span {
+  margin-right: 8px;
+  color: var(--text-2);
+}
+.code-toolbar button {
+  display: inline-flex;
+  gap: 6px;
+  align-items: center;
+}
+.code-copy-status:empty {
+  display: none;
+}
+.reading-code-block pre {
+  margin: 0;
+  padding: 18px;
+  overflow: auto;
+  tab-size: 4;
+  white-space: pre;
+  font:
+    14px/1.7 Consolas,
+    "Cascadia Code",
+    Menlo,
+    monospace;
+  text-align: left;
+}
+.reading-code-block code {
+  padding: 0;
+  font: inherit;
+  color: var(--text);
+  background: none;
+  white-space: inherit;
+  overflow-wrap: normal;
+  word-break: normal;
+}
+.code-frame .hljs-comment {
+  color: var(--text-2);
+  font-style: italic;
+}
+.code-frame .hljs-keyword,
+.code-frame .hljs-meta {
+  color: #9250a5;
+}
+.code-frame .hljs-string {
+  color: #277863;
+}
+.code-frame .hljs-number,
+.code-frame .hljs-literal,
+.code-frame .hljs-built_in {
+  color: #a44e20;
+}
+.code-frame .hljs-title {
+  color: #286ca0;
+}
+.code-frame .hljs-type {
+  color: #8b5c16;
+}
+[data-theme="dark"] .code-frame .hljs-keyword,
+[data-theme="dark"] .code-frame .hljs-meta {
+  color: #dca6eb;
+}
+[data-theme="dark"] .code-frame .hljs-string {
+  color: #96d9bc;
+}
+[data-theme="dark"] .code-frame .hljs-title {
+  color: #8bc6f1;
+}
+[data-theme="dark"] .code-frame .hljs-type {
+  color: #e6cb88;
+}
+[data-theme="dark"] .code-frame .hljs-number,
+[data-theme="dark"] .code-frame .hljs-literal,
+[data-theme="dark"] .code-frame .hljs-built_in {
+  color: #f4ab82;
+}

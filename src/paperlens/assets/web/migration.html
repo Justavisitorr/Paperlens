@@ -1,0 +1,16 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>迁移资料 · PaperLens</title>
+<script src="/_paperlens/client.js?workspace=__WORKSPACE_ID__"></script>
+<style>body{font:17px/1.8 system-ui;background:#faf9f5;color:#252720;margin:0}main{max-width:680px;margin:60px auto;padding:24px}h1{font-size:32px}input,button{font:inherit;padding:12px;border:1px solid #ccc;border-radius:8px}input{box-sizing:border-box;width:100%;margin:12px 0}button{background:#252720;color:#fff;cursor:pointer}button:disabled{opacity:.5}a{color:#a14e31}#status{overflow-wrap:anywhere}</style></head><body><main><a href="/">← 返回工作区</a><h1>把研究资料带到独立账户</h1><p>资料包包含当前账户的原 PDF、报告、笔记、恢复缓存、模型连接，以及此浏览器的术语、阅读进度和偏好。原资料会保留。</p><p>先暂停论文处理，关闭其他正在编辑的标签页。资料包使用你设置的密码加密；密码不会随文件保存。</p><label for="password">资料包密码（12–128 个字符）</label><input id="password" type="password" minlength="12" maxlength="128" autocomplete="new-password"><button id="export">下载加密资料包</button><p id="status" role="status"></p><p>到独立网站登录自己的新账户，在“账户与资料”中导入。独立账户需为空；不会按邮箱自动合并。</p></main>
+<script>
+document.getElementById('export').onclick=async()=>{
+const button=document.getElementById('export'),status=document.getElementById('status');button.disabled=true;
+try{
+const exact=['paperlens.prefs','paperlens.terms','paperlens:reading-type','paperlens:reading-language','paperlens:term-replacements','paperlens:citation-copy-format','paperlens:reference-source-preference'];
+const prefixes=['paperlens:reading-position:','paperlens:annotation-draft:','paperlens:reading-note-followup:','paperlens.draft:'];
+const browser={};for(let i=0;i<localStorage.length;i++){const key=localStorage.key(i);if(key.startsWith('paperlens:reading-notes:')&&JSON.parse(localStorage.getItem(key)||'{}').outbox?.length)throw new Error('有阅读笔记尚未同步。请先打开对应论文完成同步，再导出整包。');if(exact.includes(key)||prefixes.some(p=>key.startsWith(p)))browser[key]=localStorage.getItem(key)}
+status.textContent='正在检查并加密资料…';
+const reply=await fetch('/api/account-export',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({password:document.getElementById('password').value,browser})});
+if(!reply.ok)throw new Error((await reply.json()).detail);
+const url=URL.createObjectURL(await reply.blob()),a=document.createElement('a');a.href=url;a.download='paperlens-workspace.plbackup';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);status.textContent='资料包已下载。请把密码分开保存，导入并确认后再处理旧资料。';
+}catch(error){status.textContent=error.message}finally{button.disabled=false}
+};</script></body></html>

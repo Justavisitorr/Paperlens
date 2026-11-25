@@ -1,0 +1,50 @@
+{
+  "description": "Synthetic example for checking the direction of a ratio against its source.",
+  "provenance": {
+    "pdf_sha256": "6f201a7b52306abe3180f43aadaa95a5515c7de1edecf8c08719cebf7b3a8820"
+  },
+  "source_blocks": [
+    {
+      "id": "p0004-d0001",
+      "page": 4,
+      "text": "sparsity = nz / na",
+      "section": "指标",
+      "kind": "formula",
+      "order": 1,
+      "raw_text": "sparsity = nz / na",
+      "bbox": {
+        "x0": 0.1,
+        "x1": 0.7,
+        "y0": 0.2,
+        "y1": 0.25
+      }
+    },
+    {
+      "id": "p0004-d0002",
+      "page": 4,
+      "text": "示例向量含有 na 个分量，nz 表示其中的零元素个数。稀疏度等于 nz 除以 na。",
+      "section": "指标",
+      "kind": "text",
+      "order": 2,
+      "raw_text": "示例向量含有 na 个分量，nz 表示其中的零元素个数。稀疏度等于 nz 除以 na。",
+      "bbox": {
+        "x0": 0.1,
+        "x1": 0.7,
+        "y0": 0.30000000000000004,
+        "y1": 0.35
+      }
+    }
+  ],
+  "wrong_explanation": "稀疏度是非零元素占全部分量的比例。",
+  "correct_node": {
+    "id": "metrics",
+    "title": "稀疏度",
+    "kind": "method",
+    "summary": "用向量中零元素的比例衡量稀疏度。",
+    "explanation": "nz 是零元素个数。将它除以总分量数 na，得到稀疏度。",
+    "evidence_ids": [],
+    "origin": "author",
+    "support": "supported"
+  },
+  "expected_explanation": "稀疏度等于零元素个数与总分量数之比，取值越大，向量中零元素的比例越高。"
+}

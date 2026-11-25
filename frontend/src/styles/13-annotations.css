@@ -1,0 +1,192 @@
+/* ============ 勾画: highlights painted over the full text ============ */
+
+:root {
+  --annotation: #f6cf5c59;
+  --annotation-line: #d9a31a;
+}
+:root[data-theme="dark"] {
+  --annotation: #e0b3403d;
+  --annotation-line: #c9982e;
+}
+:root[data-vision="cvd"] {
+  --annotation: #56b4e933;
+  --annotation-line: #0a6aa6;
+}
+
+mark.annotation {
+  padding: 0;
+  border-radius: 0;
+  background: var(--annotation);
+  box-shadow: inset 0 -1.5px 0 var(--annotation-line);
+  cursor: pointer;
+  transition: background 0.15s;
+}
+mark.annotation:hover {
+  background: color-mix(in srgb, var(--annotation-line) 34%, transparent);
+}
+/* A note on it: a small dot trails the last line. */
+mark.annotation.has-note {
+  box-shadow: inset 0 -2px 0 var(--annotation-line);
+}
+/* Absent attributes preserve the existing yellow treatment on old records. */
+[data-color="yellow"] {
+  --annotation: #f6cf5c59;
+  --annotation-line: #a77a00;
+}
+[data-color="green"] {
+  --annotation: #66c99a55;
+  --annotation-line: #238459;
+}
+[data-color="blue"] {
+  --annotation: #64adef55;
+  --annotation-line: #317fb9;
+}
+[data-color="pink"] {
+  --annotation: #ea87b855;
+  --annotation-line: #b94c84;
+}
+mark.annotation[data-style="highlight"] {
+  box-shadow: none;
+}
+mark.annotation[data-style="underline"] {
+  background: transparent;
+}
+mark.annotation:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+.annotation-picker {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.annotation-colors {
+  display: flex;
+  gap: 5px;
+}
+.annotation-swatch {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: var(--annotation);
+  color: var(--text);
+  border: 1px solid var(--annotation-line);
+}
+.annotation-swatch[aria-pressed="true"] {
+  outline: 2px solid var(--text);
+  outline-offset: 2px;
+}
+.annotation-picker .button[aria-pressed="true"] {
+  background: var(--hover);
+  box-shadow: inset 0 -2px var(--accent);
+}
+/* After 勾画: the mark is on the page; colour and style restyle it in place. */
+.selection-marked {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 5px 6px 5px 10px;
+}
+.selection-marked .annotation-picker {
+  gap: 8px;
+  flex-wrap: nowrap;
+}
+.selection-marked .annotation-swatch {
+  width: 21px;
+  height: 21px;
+}
+.selection-marked-head {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--ok);
+  font-size: var(--fs-sm);
+  white-space: nowrap;
+}
+.selection-marked > button:last-child {
+  display: inline-grid;
+  place-items: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 6px;
+  color: var(--muted);
+}
+.selection-marked > button:last-child:hover {
+  background: var(--hover);
+}
+.selection-drag {
+  padding: 0 6px;
+  font-size: var(--fs-sm);
+  color: var(--muted);
+  cursor: grab;
+  white-space: nowrap;
+}
+.selection-drag:focus-visible {
+  outline: 2px solid var(--accent);
+}
+mark.annotation mark {
+  padding: 0;
+  box-shadow: 0 0 0 1px var(--match-ring);
+}
+
+.annotation-card {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: auto;
+  z-index: 46;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: min(340px, calc(100vw - 16px));
+  padding: 10px;
+}
+.annotation-card blockquote {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  padding-left: 8px;
+  border-left: 2px solid var(--annotation-line);
+  color: var(--text-2);
+  font-size: var(--fs);
+  line-height: 1.6;
+}
+.annotation-card textarea {
+  width: 100%;
+  padding: 6px 8px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--bg);
+  color: var(--text);
+  font: inherit;
+  font-size: var(--fs);
+  line-height: 1.55;
+  resize: vertical;
+}
+.annotation-card textarea:focus {
+  border-color: var(--accent);
+  outline: none;
+}
+.annotation-actions {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.annotation-actions > :first-child {
+  margin-right: auto;
+}
+.icon-button.danger:hover:not(:disabled) {
+  background: var(--bad-soft);
+  color: var(--bad);
+}
+
+@media (max-width: 480px) {
+  .selection-marked,
+  .selection-marked .annotation-picker {
+    flex-wrap: wrap;
+  }
+}

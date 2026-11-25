@@ -1,0 +1,2796 @@
+{
+  "inventory_scope": {
+    "python_runtime_lock": "requirements.txt",
+    "python_docling_lock": null,
+    "python_ocr_lock": null,
+    "frontend_lock": "frontend/package-lock.json",
+    "python_binaries_in_submission": false,
+    "browser_binaries_in_submission": false,
+    "model_weights_in_submission": false,
+    "note": "Copied upstream notices. Copyleft mentions are review flags, not package-wide license conclusions."
+  },
+  "python_runtime": [
+    {
+      "name": "annotated-doc",
+      "version": "0.0.5",
+      "license_expression": "MIT",
+      "project_urls": [
+        "Homepage, https://github.com/fastapi/annotated-doc",
+        "Documentation, https://github.com/fastapi/annotated-doc",
+        "Repository, https://github.com/fastapi/annotated-doc",
+        "Issues, https://github.com/fastapi/annotated-doc/issues",
+        "Changelog, https://github.com/fastapi/annotated-doc/release-notes.md"
+      ],
+      "notices": [
+        {
+          "path": "docs/third_party/python/annotated-doc/ee27fe45-LICENSE",
+          "sha256": "fff170779a6acbf65abdb405c087f1cee1786691e4a96a4034517e4a504a0cdf"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "annotated-types",
+      "version": "0.8.0",
+      "license_expression": "MIT",
+      "project_urls": [
+        "Homepage, https://github.com/annotated-types/annotated-types",
+        "Source, https://github.com/annotated-types/annotated-types",
+        "Changelog, https://github.com/annotated-types/annotated-types/releases"
+      ],
+      "notices": [
+        {
+          "path": "docs/third_party/python/annotated-types/289bfef3-LICENSE",
+          "sha256": "fe1049884b1a0d9342901e88e07f32925d24b3121d9972b6a6805fb9824b095d"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "anyio",
+      "version": "4.15.1",
+      "license_expression": "MIT",
+      "project_urls": [
+        "Documentation, https://anyio.readthedocs.io/en/latest/",
+        "Changelog, https://anyio.readthedocs.io/en/stable/versionhistory.html",
+        "Source code, https://github.com/agronholm/anyio",
+        "Issue tracker, https://github.com/agronholm/anyio/issues"
+      ],
+      "notices": [
+        {
+          "path": "docs/third_party/python/anyio/320fb46d-LICENSE",
+          "sha256": "5361ac9dc58f2ef5fd2e9b09c68297c17f04950909bbc8023bdb82eacf22c2b0"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "Authlib",
+      "version": "1.9.5",
+      "license_expression": "BSD-3-Clause",
+      "project_urls": [
+        "Documentation, https://docs.authlib.org/",
+        "Purchase, https://authlib.org/plans",
+        "Issues, https://github.com/authlib/authlib/issues",
+        "Source, https://github.com/authlib/authlib",
+        "Donate, https://github.com/sponsors/lepture",
+        "Blog, https://blog.authlib.org/"
+      ],
+      "notices": [
+        {
+          "path": "docs/third_party/python/Authlib/887011a1-LICENSE",
+          "sha256": "8e1b48518de9c6cd00cb48c7fe5b8023fd90d5552ca12ebe7362a0df30ddbe45"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "certifi",
+      "version": "2026.7.22",
+      "license_expression": "MPL-2.0",
+      "project_urls": [
+        "Source, https://github.com/certifi/python-certifi"
+      ],
+      "notices": [
+        {
+          "path": "docs/third_party/python/certifi/c1aedbaa-LICENSE",
+          "sha256": "e93716da6b9c0d5a4a1df60fe695b370f0695603d21f6f83f053e42cfc10caf7"
+        }
+      ],
+      "notice_copyleft_mentions": [
+        "MPL"
+      ]
+    },
+    {
+      "name": "cffi",
+      "version": "2.1.1",
+      "license_expression": "MIT-0",
+      "project_urls": [
+        "Documentation, https://cffi.readthedocs.io/",
+        "Changelog, https://cffi.readthedocs.io/en/latest/whatsnew.html",
+        "Download, https://github.com/python-cffi/cffi/releases",
+        "Contact, https://groups.google.com/forum/#!forum/python-cffi",
+        "Source Code, https://github.com/python-cffi/cffi",
+        "Issue Tracker, https://github.com/python-cffi/cffi/issues"
+      ],
+      "notices": [
+        {
+          "path": "docs/third_party/python/cffi/2e2d841f-LICENSE",
+          "sha256": "5ba24ddc57067f9249add644c3afc41a5d6dc37e23433ef759d95df370b0af63"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "charset-normalizer",
+      "version": "3.5.1",
+      "license_expression": "MIT",
+      "project_urls": [
+        "Changelog, https://github.com/jawah/charset_normalizer/blob/master/CHANGELOG.md",
+        "Documentation, https://charset-normalizer.readthedocs.io/",
+        "Code, https://github.com/jawah/charset_normalizer",
+        "Issue tracker, https://github.com/jawah/charset_normalizer/issues"
+      ],
+      "notices": [
+        {
+          "path": "docs/third_party/python/charset-normalizer/28e1644c-LICENSE",
+          "sha256": "18577485d3704f1a479ded8e573c0976cfed315fd2fd17983fa988da4c2f70d1"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "click",
+      "version": "8.5.0",
+      "license_expression": "BSD-3-Clause",
+      "project_urls": [
+        "Changes, https://click.palletsprojects.com/page/changes/",
+        "Chat, https://discord.gg/pallets",
+        "Documentation, https://click.palletsprojects.com/",
+        "Donate, https://palletsprojects.com/donate",
+        "Source, https://github.com/pallets/click/"
+      ],
+      "notices": [
+        {
+          "path": "docs/third_party/python/click/1c294ee0-LICENSE.txt",
+          "sha256": "9a8ad106a394e853bfe21f42f4e72d592819a22805d991b5f3275029292b658d"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "colorama",
+      "version": "0.4.6",
+      "license_expression": "not declared",
+      "project_urls": [
+        "Homepage, https://github.com/tartley/colorama"
+      ],
+      "notices": [
+        {
+          "path": "docs/third_party/python/colorama/9cbd6b2b-LICENSE.txt",
+          "sha256": "cac35c02686e5d04a5a7140bfb3b36e73aed496656e891102e428886d7930318"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "cryptography",
+      "version": "50.0.1",
+      "license_expression": "Apache-2.0 OR BSD-3-Clause",
+      "project_urls": [
+        "changelog, https://cryptography.io/en/latest/changelog/",
+        "documentation, https://cryptography.io/",
+        "homepage, https://github.com/pyca/cryptography",
+        "issues, https://github.com/pyca/cryptography/issues",
+        "source, https://github.com/pyca/cryptography/"
+      ],
+      "notices": [
+        {
+          "path": "docs/third_party/python/cryptography/385b4da6-LICENSE",
+          "sha256": "3e0c7c091a948b82533ba98fd7cbb40432d6f1a9acbf85f5922d2f99a93ae6bb"
+        },
+        {
+          "path": "docs/third_party/python/cryptography/db31d16a-LICENSE.APACHE",
+          "sha256": "aac73b3148f6d1d7111dbca32099f68d26c644c6813ae1e4f05f6579aa2663fe"
+        },
+        {
+          "path": "docs/third_party/python/cryptography/04b8f74b-LICENSE.BSD",
+          "sha256": "602c4c7482de6479dd2e9793cda275e5e63d773dacd1eca689232ab7008fb4fb"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "fastapi",
+      "version": "0.141.1",
+      "license_expression": "MIT",
+      "project_urls": [
+        "Homepage, https://github.com/fastapi/fastapi",
+        "Documentation, https://fastapi.tiangolo.com/",
+        "Repository, https://github.com/fastapi/fastapi",
+        "Issues, https://github.com/fastapi/fastapi/issues",
+        "Changelog, https://fastapi.tiangolo.com/release-notes/"
+      ],
+      "notices": [
+        {
+          "path": "docs/third_party/python/fastapi/a1502cf3-LICENSE",
+          "sha256": "4ec89ffc81485b97fec584b2d4a961032eeffe834453894fd9c1274906cc744e"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "greenlet",
+      "version": "3.5.6",
+      "license_expression": "MIT AND PSF-2.0",
+      "project_urls": [
+        "Homepage, https://greenlet.readthedocs.io",
+        "Documentation, https://greenlet.readthedocs.io",
+        "Repository, https://github.com/python-greenlet/greenlet",
+        "Issues, https://github.com/python-greenlet/greenlet/issues",
+        "Changelog, https://greenlet.readthedocs.io/en/latest/changes.html"
+      ],
+      "notices": [
+        {
+          "path": "docs/third_party/python/greenlet/bf5d6db4-LICENSE",
+          "sha256": "ab977b654605670319509481ece49198f405a129372ac38c96f51cd96c2f452e"
+        },
+        {
+          "path": "docs/third_party/python/greenlet/765ed478-LICENSE.PSF",
+          "sha256": "69efa689cc7aec7736236d3039c1d665e4b0c734a5bfea5abf633023abb2fff4"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "h11",
+      "version": "0.16.0",
+      "license_expression": "MIT",
+      "project_urls": [],
+      "notices": [
+        {
+          "path": "docs/third_party/python/h11/39d084ff-LICENSE.txt",
+          "sha256": "37db5bb85926db28a427a25867f10b1232003aea1be69ccb851138adb8e6f361"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "httpcore",
+      "version": "1.0.9",
+      "license_expression": "BSD-3-Clause",
+      "project_urls": [
+        "Documentation, https://www.encode.io/httpcore",
+        "Homepage, https://www.encode.io/httpcore/",
+        "Source, https://github.com/encode/httpcore"
+      ],
+      "notices": [
+        {
+          "path": "docs/third_party/python/httpcore/b6618d8d-LICENSE.md",
+          "sha256": "fdcb59154c74cbaba16a11242f7740bea9f23d6feb5547917d8c5f94a80392a5"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "httpx",
+      "version": "0.28.1",
+      "license_expression": "BSD-3-Clause",
+      "project_urls": [
+        "Changelog, https://github.com/encode/httpx/blob/master/CHANGELOG.md",
+        "Documentation, https://www.python-httpx.org",
+        "Homepage, https://github.com/encode/httpx",
+        "Source, https://github.com/encode/httpx"
+      ],
+      "notices": [
+        {
+          "path": "docs/third_party/python/httpx/1a79882f-LICENSE.md",
+          "sha256": "4ec59d544f12b5f539a3a716fd321ac58ccd8030b465221f2c880200cdf28d8d"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "idna",
+      "version": "3.20",
+      "license_expression": "BSD-3-Clause",
+      "project_urls": [
+        "Changelog, https://github.com/kjd/idna/blob/master/HISTORY.md",
+        "Issue tracker, https://github.com/kjd/idna/issues",
+        "Source, https://github.com/kjd/idna"
+      ],
+      "notices": [
+        {
+          "path": "docs/third_party/python/idna/d91c8e1d-LICENSE.md",
+          "sha256": "1a9a4f0e3d479a27240ddd59a9137a66ab4a0f9dfdc8ca6188cc0bfd85187f04"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "joserfc",
+      "version": "1.8.0",
+      "license_expression": "BSD-3-Clause",
+      "project_urls": [
+        "Documentation, https://jose.authlib.org/",
+        "Source, https://github.com/authlib/joserfc",
+        "Funding, https://github.com/sponsors/authlib",
+        "Blog, https://blog.authlib.org/"
+      ],
+      "notices": [
+        {
+          "path": "docs/third_party/python/joserfc/a317e9e8-LICENSE",
+          "sha256": "19ee1fafcc9ec4217fc32b8a651d820538c789cf4041cb4e46b4b176a5f2a9c8"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "markdown-it-py",
+      "version": "4.2.0",
+      "license_expression": "not declared",
+      "project_urls": [
+        "Documentation, https://markdown-it-py.readthedocs.io",
+        "Homepage, https://github.com/executablebooks/markdown-it-py"
+      ],
+      "notices": [
+        {
+          "path": "docs/third_party/python/markdown-it-py/d0465fdc-LICENSE",
+          "sha256": "4a2260d6e2cd0f5a151a1e86dbfe7d3ed552b1e2beabf9941c1ba5c49cbce484"
+        },
+        {
+          "path": "docs/third_party/python/markdown-it-py/b883c1f0-LICENSE.markdown-it",
+          "sha256": "792c48c5a849a15fdf9e37e8bcf9e6d1dd13b32b46c642a748a0a46a9919d473"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "mdurl",
+      "version": "0.1.2",
+      "license_expression": "not declared",
+      "project_urls": [
+        "Homepage, https://github.com/executablebooks/mdurl"
+      ],
+      "notices": [
+        {
+          "path": "docs/third_party/python/mdurl/95bd6add-LICENSE",
+          "sha256": "7c605df6e28667a9603118e98274f64a49ce3eed0d26fccce9534a345e0ef955"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "pdfminer.six",
+      "version": "20260107",
+      "license_expression": "MIT",
+      "project_urls": [
+        "Homepage, https://github.com/pdfminer/pdfminer.six"
+      ],
+      "notices": [
+        {
+          "path": "docs/third_party/python/pdfminer-six/851ab504-LICENSE",
+          "sha256": "f01e5d699a33766b5caf4a5099f2856aba4f3f75ea1df05dc0572b34b4bea8f2"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "pdfplumber",
+      "version": "0.11.10",
+      "license_expression": "not declared",
+      "project_urls": [],
+      "notices": [
+        {
+          "path": "docs/third_party/python/pdfplumber/b1128b0f-LICENSE.txt",
+          "sha256": "0d48994da4d1321e395b5e64a724ed4dec63fb96b88ac5b88fc014771e690821"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "pillow",
+      "version": "12.3.0",
+      "license_expression": "MIT-CMU",
+      "project_urls": [
+        "Release notes, https://pillow.readthedocs.io/en/stable/releasenotes/index.html",
+        "Changelog, https://github.com/python-pillow/Pillow/releases",
+        "Documentation, https://pillow.readthedocs.io",
+        "Funding, https://tidelift.com/subscription/pkg/pypi-pillow?utm_source=pypi-pillow&utm_medium=pypi",
+        "Homepage, https://python-pillow.github.io",
+        "Mastodon, https://fosstodon.org/@pillow",
+        "Source, https://github.com/python-pillow/Pillow"
+      ],
+      "notices": [
+        {
+          "path": "docs/third_party/python/pillow/60b85706-LICENSE",
+          "sha256": "4f7866a74802c6326f81faff59a56546b6aec2b10b91973e0e9308de95e79857"
+        }
+      ],
+      "notice_copyleft_mentions": [
+        "GPL",
+        "LGPL"
+      ]
+    },
+    {
+      "name": "playwright",
+      "version": "1.63.0",
+      "license_expression": "Apache-2.0",
+      "project_urls": [
+        "homepage, https://github.com/Microsoft/playwright-python",
+        "Release notes, https://github.com/microsoft/playwright-python/releases"
+      ],
+      "notices": [
+        {
+          "path": "docs/third_party/python/playwright/431ea47b-LICENSE",
+          "sha256": "7fab1461b41970ff376f1c9303a637076bfaaeb71cd12dd3a1c44aaf59a1a2b9"
+        },
+        {
+          "path": "docs/third_party/python/playwright/b79b34d3-LICENSE",
+          "sha256": "ed34dd8e3f0a78dbaf00d0444ce8e285b015b765379c2e17880455f70370f8e9"
+        },
+        {
+          "path": "docs/third_party/python/playwright/059985e4-LICENSE",
+          "sha256": "45873d00a0dd243596deb4aa23b2493b3d1f0671921bf2538ea431d7380220eb"
+        },
+        {
+          "path": "docs/third_party/python/playwright/bc29d437-NOTICE",
+          "sha256": "6d602191187b35b9b01d2cffa01c8469c2c8d9de8a96f1bf868e0f264f51c81d"
+        },
+        {
+          "path": "docs/third_party/python/playwright/cfc558e1-ThirdPartyNotices.txt",
+          "sha256": "a549d329bad8806fe279f0ecae0fc0270dec7e7c2dc8ec10f90e394f7c32b144"
+        },
+        {
+          "path": "docs/third_party/python/playwright/e5e112ea-serverRegistry.js.LICENSE",
+          "sha256": "3098a6efcbc11752cbdf6075fa65480f5470f78c8d981fab9c0796dc9a41cefe"
+        },
+        {
+          "path": "docs/third_party/python/playwright/ecabe9c5-utilsBundle.js.LICENSE",
+          "sha256": "2495f30be29620d54b58339821eda0ebabdfb6ee9b09455f7285a06fd46fb9f3"
+        },
+        {
+          "path": "docs/third_party/python/playwright/dce958b6-webp_codec.LICENSE",
+          "sha256": "995c7ee35aceb7666829b7a501ca89c0864e12b493c1174b155774ab1e03d831"
+        }
+      ],
+      "notice_copyleft_mentions": [
+        "GPL"
+      ]
+    },
+    {
+      "name": "pycparser",
+      "version": "3.0",
+      "license_expression": "BSD-3-Clause",
+      "project_urls": [
+        "Homepage, https://github.com/eliben/pycparser"
+      ],
+      "notices": [
+        {
+          "path": "docs/third_party/python/pycparser/b4cf246d-LICENSE",
+          "sha256": "0c846399369ea76ddd7b5c44fe6d16497415fcf015f5cbb508c24bf98b81c5b1"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "pydantic",
+      "version": "2.13.5",
+      "license_expression": "MIT",
+      "project_urls": [
+        "Homepage, https://github.com/pydantic/pydantic",
+        "Documentation, https://docs.pydantic.dev",
+        "Funding, https://github.com/sponsors/samuelcolvin",
+        "Source, https://github.com/pydantic/pydantic",
+        "Changelog, https://docs.pydantic.dev/latest/changelog/"
+      ],
+      "notices": [
+        {
+          "path": "docs/third_party/python/pydantic/ea58743d-LICENSE",
+          "sha256": "a9e186f3ca16b5eef84318e7a701721351a00cb7b8ae3a4394b67b49e3529ef3"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "pydantic_core",
+      "version": "2.46.5",
+      "license_expression": "MIT",
+      "project_urls": [
+        "Funding, https://github.com/sponsors/samuelcolvin",
+        "Homepage, https://github.com/pydantic",
+        "Source, https://github.com/pydantic/pydantic/tree/main/pydantic-core"
+      ],
+      "notices": [
+        {
+          "path": "docs/third_party/python/pydantic-core/bd6c3cae-LICENSE",
+          "sha256": "fbe7f615f18d135c07000e5a86325db27f42c7729699ef166ac1f7a3f4586bf4"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "pydantic-settings",
+      "version": "2.15.0",
+      "license_expression": "MIT",
+      "project_urls": [
+        "Homepage, https://github.com/pydantic/pydantic-settings",
+        "Funding, https://github.com/sponsors/samuelcolvin",
+        "Source, https://github.com/pydantic/pydantic-settings",
+        "Changelog, https://github.com/pydantic/pydantic-settings/releases",
+        "Documentation, https://docs.pydantic.dev/dev-v2/concepts/pydantic_settings/"
+      ],
+      "notices": [
+        {
+          "path": "docs/third_party/python/pydantic-settings/404f1725-LICENSE",
+          "sha256": "eb355a753e020346d33d83bf9769135b89fc610568ac531a01c295bcee7fd998"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "pyee",
+      "version": "13.0.1",
+      "license_expression": "MIT",
+      "project_urls": [
+        "Repository, https://github.com/jfhbrook/pyee",
+        "Documentation, https://pyee.readthedocs.io"
+      ],
+      "notices": [
+        {
+          "path": "docs/third_party/python/pyee/a0e6c4c7-LICENSE",
+          "sha256": "1ff556ca206b107f10e1c562ae454d3292e0296c3510eb90eb7f114caee32a66"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "Pygments",
+      "version": "2.21.0",
+      "license_expression": "BSD-2-Clause",
+      "project_urls": [
+        "Homepage, https://pygments.org",
+        "Documentation, https://pygments.org/docs",
+        "Source, https://github.com/pygments/pygments",
+        "Bug Tracker, https://github.com/pygments/pygments/issues",
+        "Changelog, https://github.com/pygments/pygments/blob/master/CHANGES"
+      ],
+      "notices": [
+        {
+          "path": "docs/third_party/python/pygments/34110d95-AUTHORS",
+          "sha256": "71a83872ad82f57be692cf827e048e2cd51d45169cfa1ea3f28706d97a872c0f"
+        },
+        {
+          "path": "docs/third_party/python/pygments/62c35449-LICENSE",
+          "sha256": "a9d66f1d526df02e29dce73436d34e56e8632f46c275bbdffc70569e882f9f17"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "pypdfium2",
+      "version": "5.13.0",
+      "license_expression": "BSD-3-Clause, Apache-2.0, dependency licenses",
+      "project_urls": [
+        "Source, https://github.com/pypdfium2-team/pypdfium2",
+        "Tracker, https://github.com/pypdfium2-team/pypdfium2/issues",
+        "Documentation, https://pypdfium2.readthedocs.io",
+        "Changelog, https://pypdfium2.readthedocs.io/en/stable/changelog.html"
+      ],
+      "notices": [
+        {
+          "path": "docs/third_party/python/pypdfium2/74598455-Apache-2.0.txt",
+          "sha256": "3ddf9be5c28fe27dad143a5dc76eea25222ad1dd68934a047064e56ed2fa40c5"
+        },
+        {
+          "path": "docs/third_party/python/pypdfium2/2d0655ae-BSD-3-Clause.txt",
+          "sha256": "ad9a9e823df025f42389c1812eae28019f657d1ed7b3a4ebfd5010b0736a0da4"
+        },
+        {
+          "path": "docs/third_party/python/pypdfium2/2961413c-CC-BY-4.0.txt",
+          "sha256": "f1b1748301cd4274f46733c218d510929661b4990855de5fc645dacd69c4371c"
+        },
+        {
+          "path": "docs/third_party/python/pypdfium2/7186d762-abseil.txt",
+          "sha256": "f54fff0b905df5b3464527c652a30e903b172d6dcab4d89b5e6f105d5e4a4603"
+        },
+        {
+          "path": "docs/third_party/python/pypdfium2/7441aac2-agg23.txt",
+          "sha256": "c110d3ea2ad77467ce0dcff7d3337e6c8be8049a5103f4b9bd5fd911a77972e5"
+        },
+        {
+          "path": "docs/third_party/python/pypdfium2/a5e2059d-fast_float.txt",
+          "sha256": "bf1b57355feca8fce77ee95f48002f8d4789fb71b30ec7599c06cda4901fbb2b"
+        },
+        {
+          "path": "docs/third_party/python/pypdfium2/56d10455-freetype.txt",
+          "sha256": "f4b133e25df1f86ad3ffea453aa0e613f0474f34778dbbb3e437e7b2724937d8"
+        },
+        {
+          "path": "docs/third_party/python/pypdfium2/ccec5c9f-icu.txt",
+          "sha256": "93679f4389d53b6835d89843f251844fb9bc455b35bab036d3c8e7abe497a47a"
+        },
+        {
+          "path": "docs/third_party/python/pypdfium2/310fbf2a-lcms.txt",
+          "sha256": "7312b68c5b25e9bf2b828706fb4e29588f22705112f411fd42e1f7d84c3d139a"
+        },
+        {
+          "path": "docs/third_party/python/pypdfium2/8cba6d8d-libjpeg_turbo.md",
+          "sha256": "be2b2b5ab168bce87bc3e31f2a5c5adba4b7f6e9e51d618e958d1d46972ebd95"
+        },
+        {
+          "path": "docs/third_party/python/pypdfium2/3e0f9e5a-libopenjpeg.txt",
+          "sha256": "c5ab0890a737c2dfa7ba675036554f6d17741d98629b0c2a145354d00617e6b2"
+        },
+        {
+          "path": "docs/third_party/python/pypdfium2/4356084a-libpng.txt",
+          "sha256": "452390433ba0f88aa3e2b122c647741b72a0c117cd6ed7a329b49785aecb5511"
+        },
+        {
+          "path": "docs/third_party/python/pypdfium2/e11f239d-libtiff.txt",
+          "sha256": "92b72ba97e6c2749c2a94bc0ef646b47080217f1e772a482b33cf5a5f98a6506"
+        },
+        {
+          "path": "docs/third_party/python/pypdfium2/cb36e822-llvm-libc.txt",
+          "sha256": "3b6226c32e168c83b891d8d6f0d3c29c2116dc3ef93dc93c307b54f279ecf383"
+        },
+        {
+          "path": "docs/third_party/python/pypdfium2/57e81a75-pdfium-binaries.txt",
+          "sha256": "8854f4388f1ca13b3ad9baa42e95f5546b4c0b17109c159256d3eca7be39b09b"
+        },
+        {
+          "path": "docs/third_party/python/pypdfium2/dfc5db00-pdfium.txt",
+          "sha256": "961eacd9633fff6d051db7208b755e9210e30efac7adec3e6a6d52798f0ccf0e"
+        },
+        {
+          "path": "docs/third_party/python/pypdfium2/7f2359d4-simdutf.txt",
+          "sha256": "c172a0ba936ff31230febb5dad869e25cb7c1a07480c7a381be8cf011bb52719"
+        },
+        {
+          "path": "docs/third_party/python/pypdfium2/36088d38-zlib.txt",
+          "sha256": "33fd641c9f3b0e0be64bc78fea9e94807674cdd70c48477599226cb8956565fe"
+        }
+      ],
+      "notice_copyleft_mentions": [
+        "GPL"
+      ]
+    },
+    {
+      "name": "python-dotenv",
+      "version": "1.2.3",
+      "license_expression": "BSD-3-Clause",
+      "project_urls": [
+        "Source, https://github.com/theskumar/python-dotenv"
+      ],
+      "notices": [
+        {
+          "path": "docs/third_party/python/python-dotenv/bdf2fac2-LICENSE",
+          "sha256": "80619b7049f08c81683ad0e01f08f257a840652dd71ee83146d36658c7d2c2b9"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "python-multipart",
+      "version": "0.0.32",
+      "license_expression": "Apache-2.0",
+      "project_urls": [
+        "Homepage, https://github.com/Kludex/python-multipart",
+        "Documentation, https://kludex.github.io/python-multipart/",
+        "Changelog, https://github.com/Kludex/python-multipart/blob/master/CHANGELOG.md",
+        "Source, https://github.com/Kludex/python-multipart"
+      ],
+      "notices": [
+        {
+          "path": "docs/third_party/python/python-multipart/ca8b4405-LICENSE.txt",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "rich",
+      "version": "14.3.4",
+      "license_expression": "MIT",
+      "project_urls": [
+        "Documentation, https://rich.readthedocs.io/en/latest/",
+        "Homepage, https://github.com/Textualize/rich"
+      ],
+      "notices": [
+        {
+          "path": "docs/third_party/python/rich/c34eae1b-LICENSE",
+          "sha256": "deed7c17a4318158190a3ea239cc879a5a50271cebb98ae7025f48fbe58dca15"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "shellingham",
+      "version": "1.5.4",
+      "license_expression": "ISC License",
+      "project_urls": [],
+      "notices": [
+        {
+          "path": "docs/third_party/python/shellingham/e5daa4cc-LICENSE",
+          "sha256": "f388fd38cad13112c1dc0f669bbe80e7f84541edbafb72f3030d2ca7642c3c9d"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "starlette",
+      "version": "1.6.0",
+      "license_expression": "BSD-3-Clause",
+      "project_urls": [
+        "Homepage, https://github.com/Kludex/starlette",
+        "Documentation, https://starlette.dev/",
+        "Changelog, https://starlette.dev/release-notes/",
+        "Funding, https://github.com/sponsors/Kludex",
+        "Source, https://github.com/Kludex/starlette"
+      ],
+      "notices": [
+        {
+          "path": "docs/third_party/python/starlette/9d4b49ca-LICENSE.md",
+          "sha256": "dcb95677a02240243187e964f941847d19b17821cf99e5afae684fab328c19bf"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "typer",
+      "version": "0.26.8",
+      "license_expression": "MIT",
+      "project_urls": [
+        "Homepage, https://github.com/fastapi/typer",
+        "Documentation, https://typer.tiangolo.com",
+        "Repository, https://github.com/fastapi/typer",
+        "Issues, https://github.com/fastapi/typer/issues",
+        "Changelog, https://typer.tiangolo.com/release-notes/"
+      ],
+      "notices": [
+        {
+          "path": "docs/third_party/python/typer/503034c7-LICENSE",
+          "sha256": "58992cebcf8dfb6e40c4e2112ed12126c243666dca3912a3d78b7ecac4859d49"
+        },
+        {
+          "path": "docs/third_party/python/typer/8dba87f7-LICENSE.txt",
+          "sha256": "9a8ad106a394e853bfe21f42f4e72d592819a22805d991b5f3275029292b658d"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "typing_extensions",
+      "version": "4.16.0",
+      "license_expression": "PSF-2.0",
+      "project_urls": [
+        "Bug Tracker, https://github.com/python/typing_extensions/issues",
+        "Changes, https://github.com/python/typing_extensions/blob/main/CHANGELOG.md",
+        "Documentation, https://typing-extensions.readthedocs.io/",
+        "Home, https://github.com/python/typing_extensions",
+        "Q & A, https://github.com/python/typing/discussions",
+        "Repository, https://github.com/python/typing_extensions"
+      ],
+      "notices": [
+        {
+          "path": "docs/third_party/python/typing-extensions/2231b6c4-LICENSE",
+          "sha256": "3b2f81fe21d181c499c59a256c8e1968455d6689d269aa85373bfb6af41da3bf"
+        }
+      ],
+      "notice_copyleft_mentions": [
+        "GPL"
+      ]
+    },
+    {
+      "name": "typing-inspection",
+      "version": "0.4.4",
+      "license_expression": "MIT",
+      "project_urls": [
+        "Homepage, https://github.com/pydantic/typing-inspection",
+        "Documentation, https://pydantic.github.io/typing-inspection/dev/",
+        "Source, https://github.com/pydantic/typing-inspection",
+        "Changelog, https://github.com/pydantic/typing-inspection/blob/main/HISTORY.md"
+      ],
+      "notices": [
+        {
+          "path": "docs/third_party/python/typing-inspection/215ebb85-LICENSE",
+          "sha256": "804b59b25f2c31bd278f9202a19ae49a3945aa2664387e2d0a128c7cacc61ec3"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "uvicorn",
+      "version": "0.53.0",
+      "license_expression": "BSD-3-Clause",
+      "project_urls": [
+        "Changelog, https://uvicorn.dev/release-notes",
+        "Funding, https://github.com/sponsors/Kludex",
+        "Homepage, https://uvicorn.dev/",
+        "Source, https://github.com/Kludex/uvicorn"
+      ],
+      "notices": [
+        {
+          "path": "docs/third_party/python/uvicorn/174746a9-LICENSE.md",
+          "sha256": "efe1acf3e62fb99c288b0ec73e5a773b7268ef4320fe757ea994214e4b63c371"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "latex2mathml",
+      "version": "3.81.1",
+      "license_expression": "MIT",
+      "project_urls": [
+        "repository, https://github.com/roniemartinez/latex2mathml",
+        "Donate, https://www.buymeacoffee.com/roniemartinez"
+      ],
+      "notices": [
+        {
+          "path": "docs/third_party/python/latex2mathml/UPSTREAM-LICENSE.txt",
+          "sha256": "4ac1e1da07f6b343d54191c5e1716840534e08591b3f9eaec90d6800cdc47543",
+          "source_url": "https://raw.githubusercontent.com/roniemartinez/latex2mathml/3.81.1/LICENSE"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    }
+  ],
+  "python_docling_runtime": [],
+  "python_ocr_runtime": [],
+  "frontend_runtime_closure": [
+    {
+      "name": "@antfu/install-pkg",
+      "version": "2.1.0",
+      "license": "MIT",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/antfu-collective/install-pkg.git"
+      },
+      "notices": [
+        {
+          "path": "docs/third_party/frontend/_antfu_install-pkg-2.1.0/LICENSE",
+          "sha256": "67cd5e903c1f908edfa27c25606fa806ce629d9a8ddb7d83019d9fd1f83f7fde"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "@braintree/sanitize-url",
+      "version": "7.1.2",
+      "license": "MIT",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/braintree/sanitize-url.git"
+      },
+      "notices": [
+        {
+          "path": "docs/third_party/frontend/_braintree_sanitize-url-7.1.2/LICENSE",
+          "sha256": "0984740e0c3d725c8044dec7edcefe1dbce180ef5a7bc710c251e19607000158"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "@chevrotain/types",
+      "version": "11.1.2",
+      "license": "Apache-2.0",
+      "repository": {
+        "type": "git",
+        "url": "git://github.com/Chevrotain/chevrotain.git"
+      },
+      "notices": [
+        {
+          "path": "docs/third_party/frontend/_chevrotain_types-11.1.2/LICENSE.txt",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "@iconify/types",
+      "version": "2.0.0",
+      "license": "MIT",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/iconify/iconify.git",
+        "directory": "packages/types"
+      },
+      "notices": [
+        {
+          "path": "docs/third_party/frontend/_iconify_types-2.0.0/license.txt",
+          "sha256": "045ce74712fc613fdd74d1c55f5140a08d623836ff2aca44132b38d68fbc67ad"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "@iconify/utils",
+      "version": "3.1.7",
+      "license": "MIT",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/iconify/iconify.git",
+        "directory": "packages/utils"
+      },
+      "notices": [
+        {
+          "path": "docs/third_party/frontend/_iconify_utils-3.1.7/license.txt",
+          "sha256": "a86793ac023162ce98b91899601c15f6712f44943163c4f92a0a4bf89152b3bf"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "@mermaid-js/parser",
+      "version": "1.2.1",
+      "license": "MIT",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/mermaid-js/mermaid.git",
+        "directory": "packages/parser"
+      },
+      "notices": [
+        {
+          "path": "docs/third_party/frontend/_mermaid-js_parser-1.2.1/LICENSE",
+          "sha256": "d374061c40bfb6f99c5033290caefda97a9b3e7e477e5ee02f487143ef2177e8"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "@types/d3",
+      "version": "7.4.3",
+      "license": "MIT",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+        "directory": "types/d3"
+      },
+      "notices": [
+        {
+          "path": "docs/third_party/frontend/_types_d3-7.4.3/LICENSE",
+          "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "@types/d3-array",
+      "version": "3.2.2",
+      "license": "MIT",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+        "directory": "types/d3-array"
+      },
+      "notices": [
+        {
+          "path": "docs/third_party/frontend/_types_d3-array-3.2.2/LICENSE",
+          "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "@types/d3-axis",
+      "version": "3.0.6",
+      "license": "MIT",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+        "directory": "types/d3-axis"
+      },
+      "notices": [
+        {
+          "path": "docs/third_party/frontend/_types_d3-axis-3.0.6/LICENSE",
+          "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "@types/d3-brush",
+      "version": "3.0.6",
+      "license": "MIT",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+        "directory": "types/d3-brush"
+      },
+      "notices": [
+        {
+          "path": "docs/third_party/frontend/_types_d3-brush-3.0.6/LICENSE",
+          "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "@types/d3-chord",
+      "version": "3.0.6",
+      "license": "MIT",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+        "directory": "types/d3-chord"
+      },
+      "notices": [
+        {
+          "path": "docs/third_party/frontend/_types_d3-chord-3.0.6/LICENSE",
+          "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "@types/d3-color",
+      "version": "3.1.3",
+      "license": "MIT",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+        "directory": "types/d3-color"
+      },
+      "notices": [
+        {
+          "path": "docs/third_party/frontend/_types_d3-color-3.1.3/LICENSE",
+          "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "@types/d3-contour",
+      "version": "3.0.6",
+      "license": "MIT",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+        "directory": "types/d3-contour"
+      },
+      "notices": [
+        {
+          "path": "docs/third_party/frontend/_types_d3-contour-3.0.6/LICENSE",
+          "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "@types/d3-delaunay",
+      "version": "6.0.4",
+      "license": "MIT",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+        "directory": "types/d3-delaunay"
+      },
+      "notices": [
+        {
+          "path": "docs/third_party/frontend/_types_d3-delaunay-6.0.4/LICENSE",
+          "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "@types/d3-dispatch",
+      "version": "3.0.7",
+      "license": "MIT",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+        "directory": "types/d3-dispatch"
+      },
+      "notices": [
+        {
+          "path": "docs/third_party/frontend/_types_d3-dispatch-3.0.7/LICENSE",
+          "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "@types/d3-drag",
+      "version": "3.0.7",
+      "license": "MIT",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+        "directory": "types/d3-drag"
+      },
+      "notices": [
+        {
+          "path": "docs/third_party/frontend/_types_d3-drag-3.0.7/LICENSE",
+          "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "@types/d3-dsv",
+      "version": "3.0.7",
+      "license": "MIT",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+        "directory": "types/d3-dsv"
+      },
+      "notices": [
+        {
+          "path": "docs/third_party/frontend/_types_d3-dsv-3.0.7/LICENSE",
+          "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "@types/d3-ease",
+      "version": "3.0.2",
+      "license": "MIT",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+        "directory": "types/d3-ease"
+      },
+      "notices": [
+        {
+          "path": "docs/third_party/frontend/_types_d3-ease-3.0.2/LICENSE",
+          "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "@types/d3-fetch",
+      "version": "3.0.7",
+      "license": "MIT",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+        "directory": "types/d3-fetch"
+      },
+      "notices": [
+        {
+          "path": "docs/third_party/frontend/_types_d3-fetch-3.0.7/LICENSE",
+          "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "@types/d3-force",
+      "version": "3.0.10",
+      "license": "MIT",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+        "directory": "types/d3-force"
+      },
+      "notices": [
+        {
+          "path": "docs/third_party/frontend/_types_d3-force-3.0.10/LICENSE",
+          "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "@types/d3-format",
+      "version": "3.0.4",
+      "license": "MIT",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+        "directory": "types/d3-format"
+      },
+      "notices": [
+        {
+          "path": "docs/third_party/frontend/_types_d3-format-3.0.4/LICENSE",
+          "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "@types/d3-geo",
+      "version": "3.1.1",
+      "license": "MIT",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+        "directory": "types/d3-geo"
+      },
+      "notices": [
+        {
+          "path": "docs/third_party/frontend/_types_d3-geo-3.1.1/LICENSE",
+          "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "@types/d3-hierarchy",
+      "version": "3.1.7",
+      "license": "MIT",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+        "directory": "types/d3-hierarchy"
+      },
+      "notices": [
+        {
+          "path": "docs/third_party/frontend/_types_d3-hierarchy-3.1.7/LICENSE",
+          "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "@types/d3-interpolate",
+      "version": "3.0.4",
+      "license": "MIT",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+        "directory": "types/d3-interpolate"
+      },
+      "notices": [
+        {
+          "path": "docs/third_party/frontend/_types_d3-interpolate-3.0.4/LICENSE",
+          "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "@types/d3-path",
+      "version": "3.1.1",
+      "license": "MIT",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+        "directory": "types/d3-path"
+      },
+      "notices": [
+        {
+          "path": "docs/third_party/frontend/_types_d3-path-3.1.1/LICENSE",
+          "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "@types/d3-polygon",
+      "version": "3.0.2",
+      "license": "MIT",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+        "directory": "types/d3-polygon"
+      },
+      "notices": [
+        {
+          "path": "docs/third_party/frontend/_types_d3-polygon-3.0.2/LICENSE",
+          "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "@types/d3-quadtree",
+      "version": "3.0.6",
+      "license": "MIT",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+        "directory": "types/d3-quadtree"
+      },
+      "notices": [
+        {
+          "path": "docs/third_party/frontend/_types_d3-quadtree-3.0.6/LICENSE",
+          "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "@types/d3-random",
+      "version": "3.0.4",
+      "license": "MIT",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+        "directory": "types/d3-random"
+      },
+      "notices": [
+        {
+          "path": "docs/third_party/frontend/_types_d3-random-3.0.4/LICENSE",
+          "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "@types/d3-scale",
+      "version": "4.0.9",
+      "license": "MIT",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+        "directory": "types/d3-scale"
+      },
+      "notices": [
+        {
+          "path": "docs/third_party/frontend/_types_d3-scale-4.0.9/LICENSE",
+          "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "@types/d3-scale-chromatic",
+      "version": "3.1.0",
+      "license": "MIT",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+        "directory": "types/d3-scale-chromatic"
+      },
+      "notices": [
+        {
+          "path": "docs/third_party/frontend/_types_d3-scale-chromatic-3.1.0/LICENSE",
+          "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "@types/d3-selection",
+      "version": "3.0.12",
+      "license": "MIT",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+        "directory": "types/d3-selection"
+      },
+      "notices": [
+        {
+          "path": "docs/third_party/frontend/_types_d3-selection-3.0.12/LICENSE",
+          "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "@types/d3-shape",
+      "version": "3.2.0",
+      "license": "MIT",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+        "directory": "types/d3-shape"
+      },
+      "notices": [
+        {
+          "path": "docs/third_party/frontend/_types_d3-shape-3.2.0/LICENSE",
+          "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "@types/d3-time",
+      "version": "3.0.4",
+      "license": "MIT",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+        "directory": "types/d3-time"
+      },
+      "notices": [
+        {
+          "path": "docs/third_party/frontend/_types_d3-time-3.0.4/LICENSE",
+          "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "@types/d3-time-format",
+      "version": "4.0.3",
+      "license": "MIT",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+        "directory": "types/d3-time-format"
+      },
+      "notices": [
+        {
+          "path": "docs/third_party/frontend/_types_d3-time-format-4.0.3/LICENSE",
+          "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "@types/d3-timer",
+      "version": "3.0.2",
+      "license": "MIT",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+        "directory": "types/d3-timer"
+      },
+      "notices": [
+        {
+          "path": "docs/third_party/frontend/_types_d3-timer-3.0.2/LICENSE",
+          "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "@types/d3-transition",
+      "version": "3.0.9",
+      "license": "MIT",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+        "directory": "types/d3-transition"
+      },
+      "notices": [
+        {
+          "path": "docs/third_party/frontend/_types_d3-transition-3.0.9/LICENSE",
+          "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "@types/d3-zoom",
+      "version": "3.0.8",
+      "license": "MIT",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+        "directory": "types/d3-zoom"
+      },
+      "notices": [
+        {
+          "path": "docs/third_party/frontend/_types_d3-zoom-3.0.8/LICENSE",
+          "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "@types/geojson",
+      "version": "7946.0.16",
+      "license": "MIT",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+        "directory": "types/geojson"
+      },
+      "notices": [
+        {
+          "path": "docs/third_party/frontend/_types_geojson-7946.0.16/LICENSE",
+          "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "@upsetjs/venn.js",
+      "version": "2.0.0",
+      "license": "MIT",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/upsetjs/venn.js.git"
+      },
+      "notices": [
+        {
+          "path": "docs/third_party/frontend/_upsetjs_venn.js-2.0.0/LICENSE",
+          "sha256": "6a3508febf2cfccfee96597394543a6154a4bb0b1f91f28404be42c09e9fcb54"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "commander",
+      "version": "7.2.0",
+      "license": "MIT",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/tj/commander.js.git"
+      },
+      "notices": [
+        {
+          "path": "docs/third_party/frontend/commander-7.2.0/LICENSE",
+          "sha256": "04512a63dce4d2d506ad612dc0bd7681ccf6e3655f7b6eaef7dfac8323d1ec0b"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "commander",
+      "version": "8.3.0",
+      "license": "MIT",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/tj/commander.js.git"
+      },
+      "notices": [
+        {
+          "path": "docs/third_party/frontend/commander-8.3.0/LICENSE",
+          "sha256": "04512a63dce4d2d506ad612dc0bd7681ccf6e3655f7b6eaef7dfac8323d1ec0b"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "cose-base",
+      "version": "1.0.3",
+      "license": "MIT",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/iVis-at-Bilkent/cose-base.git"
+      },
+      "notices": [
+        {
+          "path": "docs/third_party/frontend/cose-base-1.0.3/LICENSE",
+          "sha256": "5fb3cf4a14c3c5af6e473a192df8bca10c77754e3a0c6492c79fb92a76a5478a"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "cose-base",
+      "version": "2.2.0",
+      "license": "MIT",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/iVis-at-Bilkent/cose-base.git"
+      },
+      "notices": [
+        {
+          "path": "docs/third_party/frontend/cose-base-2.2.0/LICENSE",
+          "sha256": "5fb3cf4a14c3c5af6e473a192df8bca10c77754e3a0c6492c79fb92a76a5478a"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "cytoscape",
+      "version": "3.34.3",
+      "license": "MIT",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/cytoscape/cytoscape.js.git"
+      },
+      "notices": [
+        {
+          "path": "docs/third_party/frontend/cytoscape-3.34.3/LICENSE",
+          "sha256": "eb319c6e6f233607f71e8e2f450391751883cfc0eeb3ca7ef574c13d1d9c2203"
+        },
+        {
+          "path": "docs/third_party/frontend/cytoscape-3.34.3/license-update.mjs",
+          "sha256": "4a5a644717fc90d678e8fbbc537a08452d0566726710eef47b196abd6363e635"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "cytoscape-cose-bilkent",
+      "version": "4.1.0",
+      "license": "MIT",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/cytoscape/cytoscape.js-cose-bilkent.git"
+      },
+      "notices": [
+        {
+          "path": "docs/third_party/frontend/cytoscape-cose-bilkent-4.1.0/LICENSE",
+          "sha256": "440fc58a56a12814e417d2b341da89b050da052dc75bdb235607d37ec5fe74ef"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "cytoscape-fcose",
+      "version": "2.2.0",
+      "license": "MIT",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/iVis-at-Bilkent/cytoscape.js-fcose.git"
+      },
+      "notices": [
+        {
+          "path": "docs/third_party/frontend/cytoscape-fcose-2.2.0/LICENSE",
+          "sha256": "2837634f403949215760fcdd2fa1ed0c64875d02099ecc8318c704b852f1421d"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "d3",
+      "version": "7.9.0",
+      "license": "ISC",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/d3/d3.git"
+      },
+      "notices": [
+        {
+          "path": "docs/third_party/frontend/d3-7.9.0/LICENSE",
+          "sha256": "3e6849627f74ff73c257a3ae1efb574015d94fc1035c05ec3c15805165efcbc4"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "d3-array",
+      "version": "2.12.1",
+      "license": "BSD-3-Clause",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/d3/d3-array.git"
+      },
+      "notices": [
+        {
+          "path": "docs/third_party/frontend/d3-array-2.12.1/LICENSE",
+          "sha256": "0747bebeb06b10954913149be9b9a8bdf6fad3e6fdcbd9f9524e7a94c13d2cea"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "d3-array",
+      "version": "3.2.4",
+      "license": "ISC",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/d3/d3-array.git"
+      },
+      "notices": [
+        {
+          "path": "docs/third_party/frontend/d3-array-3.2.4/LICENSE",
+          "sha256": "3e6849627f74ff73c257a3ae1efb574015d94fc1035c05ec3c15805165efcbc4"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "d3-axis",
+      "version": "3.0.0",
+      "license": "ISC",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/d3/d3-axis.git"
+      },
+      "notices": [
+        {
+          "path": "docs/third_party/frontend/d3-axis-3.0.0/LICENSE",
+          "sha256": "e008c5e25a6be382593089c29bfabbc553c6378eee02895aec46ce396cc404ee"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "d3-brush",
+      "version": "3.0.0",
+      "license": "ISC",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/d3/d3-brush.git"
+      },
+      "notices": [
+        {
+          "path": "docs/third_party/frontend/d3-brush-3.0.0/LICENSE",
+          "sha256": "e008c5e25a6be382593089c29bfabbc553c6378eee02895aec46ce396cc404ee"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "d3-chord",
+      "version": "3.0.1",
+      "license": "ISC",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/d3/d3-chord.git"
+      },
+      "notices": [
+        {
+          "path": "docs/third_party/frontend/d3-chord-3.0.1/LICENSE",
+          "sha256": "e008c5e25a6be382593089c29bfabbc553c6378eee02895aec46ce396cc404ee"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "d3-color",
+      "version": "3.1.0",
+      "license": "ISC",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/d3/d3-color.git"
+      },
+      "notices": [
+        {
+          "path": "docs/third_party/frontend/d3-color-3.1.0/LICENSE",
+          "sha256": "faa682e3e430941f958d26180458f5934a62f58dac4d70ccdd15608c15d0f884"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "d3-contour",
+      "version": "4.0.2",
+      "license": "ISC",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/d3/d3-contour.git"
+      },
+      "notices": [
+        {
+          "path": "docs/third_party/frontend/d3-contour-4.0.2/LICENSE",
+          "sha256": "e51cba0e4fa1d8c078e15319868f2b90188f413f9ce9dac1043b62db32901e93"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "d3-delaunay",
+      "version": "6.0.4",
+      "license": "ISC",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/d3/d3-delaunay.git"
+      },
+      "notices": [
+        {
+          "path": "docs/third_party/frontend/d3-delaunay-6.0.4/LICENSE",
+          "sha256": "582c3022bd01942336095f92b58a90b1be624dc547d987555c6c956512dd24c1"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "d3-dispatch",
+      "version": "3.0.1",
+      "license": "ISC",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/d3/d3-dispatch.git"
+      },
+      "notices": [
+        {
+          "path": "docs/third_party/frontend/d3-dispatch-3.0.1/LICENSE",
+          "sha256": "e008c5e25a6be382593089c29bfabbc553c6378eee02895aec46ce396cc404ee"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "d3-drag",
+      "version": "3.0.0",
+      "license": "ISC",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/d3/d3-drag.git"
+      },
+      "notices": [
+        {
+          "path": "docs/third_party/frontend/d3-drag-3.0.0/LICENSE",
+          "sha256": "e008c5e25a6be382593089c29bfabbc553c6378eee02895aec46ce396cc404ee"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "d3-dsv",
+      "version": "3.0.1",
+      "license": "ISC",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/d3/d3-dsv.git"
+      },
+      "notices": [
+        {
+          "path": "docs/third_party/frontend/d3-dsv-3.0.1/LICENSE",
+          "sha256": "7842a82012622e5a37bfe4f6c1b67cd3bae6350716b5bf87f36cea0bdc1319dc"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "d3-ease",
+      "version": "3.0.1",
+      "license": "BSD-3-Clause",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/d3/d3-ease.git"
+      },
+      "notices": [
+        {
+          "path": "docs/third_party/frontend/d3-ease-3.0.1/LICENSE",
+          "sha256": "b989d9085148d21ff64a75e14462aefa06b2589a55553b07b1460c70081c7d08"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "d3-fetch",
+      "version": "3.0.1",
+      "license": "ISC",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/d3/d3-fetch.git"
+      },
+      "notices": [
+        {
+          "path": "docs/third_party/frontend/d3-fetch-3.0.1/LICENSE",
+          "sha256": "ffdc17dc9040006bddeb891c95bfbb492e86d6bc64a4a4233666febab1be35e0"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "d3-force",
+      "version": "3.0.0",
+      "license": "ISC",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/d3/d3-force.git"
+      },
+      "notices": [
+        {
+          "path": "docs/third_party/frontend/d3-force-3.0.0/LICENSE",
+          "sha256": "e008c5e25a6be382593089c29bfabbc553c6378eee02895aec46ce396cc404ee"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "d3-format",
+      "version": "3.1.2",
+      "license": "ISC",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/d3/d3-format.git"
+      },
+      "notices": [
+        {
+          "path": "docs/third_party/frontend/d3-format-3.1.2/LICENSE",
+          "sha256": "2a6d2d5f32ba0b755ddbc1c833f766e30cdbe6ebe9a6d4e3e24427721f0b63d3"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "d3-geo",
+      "version": "3.1.1",
+      "license": "ISC",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/d3/d3-geo.git"
+      },
+      "notices": [
+        {
+          "path": "docs/third_party/frontend/d3-geo-3.1.1/LICENSE",
+          "sha256": "3e3edc1224eec9c39cd26491a21304a62883c1e5b6a65c5283ccc7a6cc94baee"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "d3-hierarchy",
+      "version": "3.1.2",
+      "license": "ISC",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/d3/d3-hierarchy.git"
+      },
+      "notices": [
+        {
+          "path": "docs/third_party/frontend/d3-hierarchy-3.1.2/LICENSE",
+          "sha256": "e008c5e25a6be382593089c29bfabbc553c6378eee02895aec46ce396cc404ee"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "d3-interpolate",
+      "version": "3.0.1",
+      "license": "ISC",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/d3/d3-interpolate.git"
+      },
+      "notices": [
+        {
+          "path": "docs/third_party/frontend/d3-interpolate-3.0.1/LICENSE",
+          "sha256": "e008c5e25a6be382593089c29bfabbc553c6378eee02895aec46ce396cc404ee"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "d3-path",
+      "version": "1.0.9",
+      "license": "BSD-3-Clause",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/d3/d3-path.git"
+      },
+      "notices": [
+        {
+          "path": "docs/third_party/frontend/d3-path-1.0.9/LICENSE",
+          "sha256": "b8265327ab678f554800e71188b1cc6b1ff57522e292d2b1c0be66f27cf328b6"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "d3-path",
+      "version": "3.1.0",
+      "license": "ISC",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/d3/d3-path.git"
+      },
+      "notices": [
+        {
+          "path": "docs/third_party/frontend/d3-path-3.1.0/LICENSE",
+          "sha256": "a09b0d6d76e768fca2085fad05743ee81ddd11946bcda160a3cf5e1081a479aa"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "d3-polygon",
+      "version": "3.0.1",
+      "license": "ISC",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/d3/d3-polygon.git"
+      },
+      "notices": [
+        {
+          "path": "docs/third_party/frontend/d3-polygon-3.0.1/LICENSE",
+          "sha256": "e008c5e25a6be382593089c29bfabbc553c6378eee02895aec46ce396cc404ee"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "d3-quadtree",
+      "version": "3.0.1",
+      "license": "ISC",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/d3/d3-quadtree.git"
+      },
+      "notices": [
+        {
+          "path": "docs/third_party/frontend/d3-quadtree-3.0.1/LICENSE",
+          "sha256": "e008c5e25a6be382593089c29bfabbc553c6378eee02895aec46ce396cc404ee"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "d3-random",
+      "version": "3.0.1",
+      "license": "ISC",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/d3/d3-random.git"
+      },
+      "notices": [
+        {
+          "path": "docs/third_party/frontend/d3-random-3.0.1/LICENSE",
+          "sha256": "e008c5e25a6be382593089c29bfabbc553c6378eee02895aec46ce396cc404ee"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "d3-sankey",
+      "version": "0.12.3",
+      "license": "BSD-3-Clause",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/d3/d3-sankey.git"
+      },
+      "notices": [
+        {
+          "path": "docs/third_party/frontend/d3-sankey-0.12.3/LICENSE",
+          "sha256": "2bf785e778d67a4f5266cffcd4f2cc5bb98cde73791666e7efeb8002ba32dfa5"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "d3-scale",
+      "version": "4.0.2",
+      "license": "ISC",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/d3/d3-scale.git"
+      },
+      "notices": [
+        {
+          "path": "docs/third_party/frontend/d3-scale-4.0.2/LICENSE",
+          "sha256": "e008c5e25a6be382593089c29bfabbc553c6378eee02895aec46ce396cc404ee"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "d3-scale-chromatic",
+      "version": "3.1.0",
+      "license": "ISC",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/d3/d3-scale-chromatic.git"
+      },
+      "notices": [
+        {
+          "path": "docs/third_party/frontend/d3-scale-chromatic-3.1.0/LICENSE",
+          "sha256": "0986d93944902cca9af86824b6a641b4b7c2d10602fc510c433a8bcd443919fe"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "d3-selection",
+      "version": "3.0.0",
+      "license": "ISC",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/d3/d3-selection.git"
+      },
+      "notices": [
+        {
+          "path": "docs/third_party/frontend/d3-selection-3.0.0/LICENSE",
+          "sha256": "e008c5e25a6be382593089c29bfabbc553c6378eee02895aec46ce396cc404ee"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "d3-shape",
+      "version": "1.3.7",
+      "license": "BSD-3-Clause",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/d3/d3-shape.git"
+      },
+      "notices": [
+        {
+          "path": "docs/third_party/frontend/d3-shape-1.3.7/LICENSE",
+          "sha256": "7eea8533ea92bd8c32a901e89ecb0305890905bb12711449565ddff96891146d"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "d3-shape",
+      "version": "3.2.0",
+      "license": "ISC",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/d3/d3-shape.git"
+      },
+      "notices": [
+        {
+          "path": "docs/third_party/frontend/d3-shape-3.2.0/LICENSE",
+          "sha256": "faa682e3e430941f958d26180458f5934a62f58dac4d70ccdd15608c15d0f884"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "d3-time",
+      "version": "3.1.0",
+      "license": "ISC",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/d3/d3-time.git"
+      },
+      "notices": [
+        {
+          "path": "docs/third_party/frontend/d3-time-3.1.0/LICENSE",
+          "sha256": "faa682e3e430941f958d26180458f5934a62f58dac4d70ccdd15608c15d0f884"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "d3-time-format",
+      "version": "4.1.0",
+      "license": "ISC",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/d3/d3-time-format.git"
+      },
+      "notices": [
+        {
+          "path": "docs/third_party/frontend/d3-time-format-4.1.0/LICENSE",
+          "sha256": "e008c5e25a6be382593089c29bfabbc553c6378eee02895aec46ce396cc404ee"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "d3-timer",
+      "version": "3.0.1",
+      "license": "ISC",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/d3/d3-timer.git"
+      },
+      "notices": [
+        {
+          "path": "docs/third_party/frontend/d3-timer-3.0.1/LICENSE",
+          "sha256": "e008c5e25a6be382593089c29bfabbc553c6378eee02895aec46ce396cc404ee"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "d3-transition",
+      "version": "3.0.1",
+      "license": "ISC",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/d3/d3-transition.git"
+      },
+      "notices": [
+        {
+          "path": "docs/third_party/frontend/d3-transition-3.0.1/LICENSE",
+          "sha256": "e008c5e25a6be382593089c29bfabbc553c6378eee02895aec46ce396cc404ee"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "d3-zoom",
+      "version": "3.0.0",
+      "license": "ISC",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/d3/d3-zoom.git"
+      },
+      "notices": [
+        {
+          "path": "docs/third_party/frontend/d3-zoom-3.0.0/LICENSE",
+          "sha256": "e008c5e25a6be382593089c29bfabbc553c6378eee02895aec46ce396cc404ee"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "dagre-d3-es",
+      "version": "7.0.14",
+      "license": "MIT",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/tbo47/dagre-es.git"
+      },
+      "notices": [
+        {
+          "path": "docs/third_party/frontend/dagre-d3-es-7.0.14/LICENSE.md",
+          "sha256": "d01eb84ccce437dbf5fd40853bceea0f287930920acea066597a4a25ead63858"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "dayjs",
+      "version": "1.11.23",
+      "license": "MIT",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/iamkun/dayjs.git"
+      },
+      "notices": [
+        {
+          "path": "docs/third_party/frontend/dayjs-1.11.23/LICENSE",
+          "sha256": "5faab7526d055651be3aab769d58897be6bd91f3d39d137f25f12dba1b31d5dc"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "delaunator",
+      "version": "5.1.0",
+      "license": "ISC",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/mapbox/delaunator.git"
+      },
+      "notices": [
+        {
+          "path": "docs/third_party/frontend/delaunator-5.1.0/LICENSE",
+          "sha256": "0b348fff56384b43dbb37593906904e56d0f9deb51eae590d4dc6d427fbf1808"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "dompurify",
+      "version": "3.4.15",
+      "license": "(MPL-2.0 OR Apache-2.0)",
+      "repository": {
+        "type": "git",
+        "url": "git://github.com/cure53/DOMPurify.git"
+      },
+      "notices": [
+        {
+          "path": "docs/third_party/frontend/dompurify-3.4.15/LICENSE",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+        },
+        {
+          "path": "docs/third_party/frontend/dompurify-3.4.15/LICENSE-MPL",
+          "sha256": "fab3dd6bdab226f1c08630b1dd917e11fcb4ec5e1e020e2c16f83a0a13863e85"
+        }
+      ],
+      "notice_copyleft_mentions": [
+        "GPL",
+        "LGPL",
+        "MPL"
+      ]
+    },
+    {
+      "name": "es-toolkit",
+      "version": "1.52.0",
+      "license": "MIT",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/toss/es-toolkit.git"
+      },
+      "notices": [
+        {
+          "path": "docs/third_party/frontend/es-toolkit-1.52.0/LICENSE",
+          "sha256": "51f3674294d988d89dbebd31273baaeb3c697a15482d9699b14d1fded2e132a7"
+        },
+        {
+          "path": "docs/third_party/frontend/es-toolkit-1.52.0/NOTICE",
+          "sha256": "11ee5e3bce9b0a4dde7f73811caf98978e710228d891c3111ad8ef8d7d2a916f"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "fastdom",
+      "version": "1.0.12",
+      "license": "MIT",
+      "repository": {
+        "type": "git",
+        "url": "git://github.com/wilsonpage/fastdom.git"
+      },
+      "notices": [
+        {
+          "path": "docs/third_party/frontend/fastdom-1.0.12/README.md",
+          "sha256": "cc5669ab6f7741bb061c8a7244addc8e3af1f84ec7d2445744b59d0169a87d11"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "hachure-fill",
+      "version": "0.5.2",
+      "license": "MIT",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/pshihn/hachure-fill.git"
+      },
+      "notices": [
+        {
+          "path": "docs/third_party/frontend/hachure-fill-0.5.2/LICENSE",
+          "sha256": "5e807b516a9be9229ed459880bf353a336e2d947867247290680d437017be391"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "highlight.js",
+      "version": "11.12.0",
+      "license": "BSD-3-Clause",
+      "repository": {
+        "type": "git",
+        "url": "git://github.com/highlightjs/highlight.js.git"
+      },
+      "notices": [
+        {
+          "path": "docs/third_party/frontend/highlight.js-11.12.0/LICENSE",
+          "sha256": "6c081431591d9df696c82dc598fe1423765b8a299b200ed00b281afd0f64c490"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "iconv-lite",
+      "version": "0.6.3",
+      "license": "MIT",
+      "repository": {
+        "type": "git",
+        "url": "git://github.com/ashtuchkin/iconv-lite.git"
+      },
+      "notices": [
+        {
+          "path": "docs/third_party/frontend/iconv-lite-0.6.3/LICENSE",
+          "sha256": "ac779f7314c74f232ef847ea86e714abe25cf6eeb5cc97b69451b74e2af6492d"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "import-meta-resolve",
+      "version": "4.2.0",
+      "license": "MIT",
+      "repository": "wooorm/import-meta-resolve",
+      "notices": [
+        {
+          "path": "docs/third_party/frontend/import-meta-resolve-4.2.0/license",
+          "sha256": "8770a1a4b69ee722636643e81340ce4a8f0b8415b1c568487edc9062338bfcc7"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "internmap",
+      "version": "1.0.1",
+      "license": "ISC",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/mbostock/internmap.git"
+      },
+      "notices": [
+        {
+          "path": "docs/third_party/frontend/internmap-1.0.1/LICENSE",
+          "sha256": "9ea8903938dab5f12c4572d60725069bec2d1b0dc3bcc210b09bae946a5ebb1f"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "internmap",
+      "version": "2.0.3",
+      "license": "ISC",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/mbostock/internmap.git"
+      },
+      "notices": [
+        {
+          "path": "docs/third_party/frontend/internmap-2.0.3/LICENSE",
+          "sha256": "9ea8903938dab5f12c4572d60725069bec2d1b0dc3bcc210b09bae946a5ebb1f"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "katex",
+      "version": "0.16.47",
+      "license": "MIT",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/KaTeX/KaTeX.git"
+      },
+      "notices": [
+        {
+          "path": "docs/third_party/frontend/katex-0.16.47/LICENSE",
+          "sha256": "766ccc1f306c885aa45542a9846bbd0a505b27a0374f146778171c2254ce18e3"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "khroma",
+      "version": "2.1.0",
+      "license": "not declared",
+      "repository": "github:fabiospampinato/khroma",
+      "notices": [
+        {
+          "path": "docs/third_party/frontend/khroma-2.1.0/license",
+          "sha256": "66b333b0f66759a0b710459e03f7029abe17f4358114a128d2c972e642961b49"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "layout-base",
+      "version": "1.0.2",
+      "license": "MIT",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/iVis-at-Bilkent/layout-base.git"
+      },
+      "notices": [
+        {
+          "path": "docs/third_party/frontend/layout-base-1.0.2/LICENSE",
+          "sha256": "eabb762d8a95109a39c9be3247325529a5239a7aca327d909c3ccdc41f3a06bf"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "layout-base",
+      "version": "2.0.1",
+      "license": "MIT",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/iVis-at-Bilkent/layout-base.git"
+      },
+      "notices": [
+        {
+          "path": "docs/third_party/frontend/layout-base-2.0.1/LICENSE",
+          "sha256": "eabb762d8a95109a39c9be3247325529a5239a7aca327d909c3ccdc41f3a06bf"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "lodash-es",
+      "version": "4.18.1",
+      "license": "MIT",
+      "repository": "lodash/lodash",
+      "notices": [
+        {
+          "path": "docs/third_party/frontend/lodash-es-4.18.1/LICENSE",
+          "sha256": "f71e8ed126b46346494aad5486874cd8f0aafe95092ed67d2e3cb6110f939abc"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "marked",
+      "version": "16.4.2",
+      "license": "MIT",
+      "repository": {
+        "type": "git",
+        "url": "git://github.com/markedjs/marked.git"
+      },
+      "notices": [
+        {
+          "path": "docs/third_party/frontend/marked-16.4.2/LICENSE.md",
+          "sha256": "8e3a3f82f59a60958f56ca08f445647c32a4733dc7ca6c2c46f6eb898471ab9c"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "mermaid",
+      "version": "11.17.2",
+      "license": "MIT",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/mermaid-js/mermaid"
+      },
+      "notices": [
+        {
+          "path": "docs/third_party/frontend/mermaid-11.17.2/LICENSE",
+          "sha256": "ec9fb67dcb25eccc416ed56e1aab819222c805a2a4bfe4cb19e7556bf2ffde80"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "package-manager-detector",
+      "version": "1.8.0",
+      "license": "MIT",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/antfu-collective/package-manager-detector.git"
+      },
+      "notices": [
+        {
+          "path": "docs/third_party/frontend/package-manager-detector-1.8.0/LICENSE",
+          "sha256": "05c365176db3cc00e951c44b921c809c75b8e99d2d724f7daf00381e26fb0850"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "path-data-parser",
+      "version": "0.1.0",
+      "license": "MIT",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/pshihn/path-data-parser.git"
+      },
+      "notices": [
+        {
+          "path": "docs/third_party/frontend/path-data-parser-0.1.0/LICENSE",
+          "sha256": "e9754a00aebde654e80f40bcf41dab667d6a41dfbbd2912bcf14fb07d468bf71"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "pdfjs-dist",
+      "version": "6.3.289",
+      "license": "Apache-2.0",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/mozilla/pdf.js.git"
+      },
+      "notices": [
+        {
+          "path": "docs/third_party/frontend/pdfjs-dist-6.3.289/cmaps/LICENSE",
+          "sha256": "aa92ab5a472974865a96fd4a4e9c13bb41bf6fe1b309cb6b8da48bc9e19839a2"
+        },
+        {
+          "path": "docs/third_party/frontend/pdfjs-dist-6.3.289/LICENSE",
+          "sha256": "0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594"
+        },
+        {
+          "path": "docs/third_party/frontend/pdfjs-dist-6.3.289/standard_fonts/LICENSE_FOXIT",
+          "sha256": "b578cdd2345840ada550bd12519533812320d5f1d21cf4c1c7e1b1b0a31c98b7"
+        },
+        {
+          "path": "docs/third_party/frontend/pdfjs-dist-6.3.289/standard_fonts/LICENSE_LIBERATION",
+          "sha256": "d2c4d5b3e115a519cb58eb691aa64538397e2611f9ebe801392cf9667997e7dc"
+        },
+        {
+          "path": "docs/third_party/frontend/pdfjs-dist-6.3.289/wasm/LICENSE_JBIG2",
+          "sha256": "9e66b7f1b934a28b37f3bc4dac97915de1674271e79a0a88182a18ed9731b4d1"
+        },
+        {
+          "path": "docs/third_party/frontend/pdfjs-dist-6.3.289/wasm/LICENSE_OPENJPEG",
+          "sha256": "a6af136f3e15038a666b61f376612a07d9a4e48cb7c01adbf3e33b3f14ab49b6"
+        },
+        {
+          "path": "docs/third_party/frontend/pdfjs-dist-6.3.289/wasm/LICENSE_PDFJS_JBIG2",
+          "sha256": "aad3cce09842e00e9e11ad5e8fef8cc02fbc3a3768fe2f007443b9cee37aaee5"
+        },
+        {
+          "path": "docs/third_party/frontend/pdfjs-dist-6.3.289/wasm/LICENSE_PDFJS_OPENJPEG",
+          "sha256": "717fc62da03292dbb4dd0c8280bd4ce7bb8550dcf31d772bc93455fb50313425"
+        },
+        {
+          "path": "docs/third_party/frontend/pdfjs-dist-6.3.289/wasm/LICENSE_PDFJS_QCMS",
+          "sha256": "508a77d2e7b51d98adeed32648ad124b7b30241a8e70b2e72c99f92d8e5874d1"
+        },
+        {
+          "path": "docs/third_party/frontend/pdfjs-dist-6.3.289/wasm/LICENSE_QCMS",
+          "sha256": "36d847ae882f6574ebc72f56a4f354e4f104fde4a584373496482e97d52d31bc"
+        }
+      ],
+      "notice_copyleft_mentions": [
+        "GPL",
+        "LGPL"
+      ]
+    },
+    {
+      "name": "points-on-curve",
+      "version": "0.2.0",
+      "license": "MIT",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/pshihn/bezier-points.git"
+      },
+      "notices": [
+        {
+          "path": "docs/third_party/frontend/points-on-curve-0.2.0/LICENSE",
+          "sha256": "e9754a00aebde654e80f40bcf41dab667d6a41dfbbd2912bcf14fb07d468bf71"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "points-on-path",
+      "version": "0.2.1",
+      "license": "MIT",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/pshihn/points-on-path.git"
+      },
+      "notices": [
+        {
+          "path": "docs/third_party/frontend/points-on-path-0.2.1/LICENSE",
+          "sha256": "b6fc1f7f1d96a48bc97176f3dcef959e364c5c17ba44167511de421500a86c6c"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "react",
+      "version": "19.3.0",
+      "license": "MIT",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/react/react.git",
+        "directory": "packages/react"
+      },
+      "notices": [
+        {
+          "path": "docs/third_party/frontend/react-19.3.0/LICENSE",
+          "sha256": "da6d3703ed11cbe42bd212c725957c98da23cbff1998c05fa4b3d976d1a58e93"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "react-dom",
+      "version": "19.3.0",
+      "license": "MIT",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/react/react.git",
+        "directory": "packages/react-dom"
+      },
+      "notices": [
+        {
+          "path": "docs/third_party/frontend/react-dom-19.3.0/LICENSE",
+          "sha256": "da6d3703ed11cbe42bd212c725957c98da23cbff1998c05fa4b3d976d1a58e93"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "robust-predicates",
+      "version": "3.0.3",
+      "license": "Unlicense",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/mourner/robust-predicates.git"
+      },
+      "notices": [
+        {
+          "path": "docs/third_party/frontend/robust-predicates-3.0.3/LICENSE",
+          "sha256": "88d9b4eb60579c191ec391ca04c16130572d7eedc4a86daa58bf28c6e14c9bcd"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "roughjs",
+      "version": "4.6.6",
+      "license": "MIT",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/pshihn/rough.git"
+      },
+      "notices": [
+        {
+          "path": "docs/third_party/frontend/roughjs-4.6.6/LICENSE",
+          "sha256": "dca9a392272606ac748ac0976a2a1133f14eef841c27beaa51a844d53c56a09d"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "rw",
+      "version": "1.3.3",
+      "license": "BSD-3-Clause",
+      "repository": {
+        "type": "git",
+        "url": "http://github.com/mbostock/rw.git"
+      },
+      "notices": [
+        {
+          "path": "docs/third_party/frontend/rw-1.3.3/LICENSE",
+          "sha256": "e273680c43c2ab5bb3b50af28de6a08000b333396834db7bf6129cd6f130c9cd"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "safer-buffer",
+      "version": "2.1.2",
+      "license": "MIT",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ChALkeR/safer-buffer.git"
+      },
+      "notices": [
+        {
+          "path": "docs/third_party/frontend/safer-buffer-2.1.2/LICENSE",
+          "sha256": "4bc935e71be198c67ddf3c2b5fddb195f6edc182bfc155a96a6db61b44b494b9"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "scheduler",
+      "version": "0.28.0",
+      "license": "MIT",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/react/react.git",
+        "directory": "packages/scheduler"
+      },
+      "notices": [
+        {
+          "path": "docs/third_party/frontend/scheduler-0.28.0/LICENSE",
+          "sha256": "da6d3703ed11cbe42bd212c725957c98da23cbff1998c05fa4b3d976d1a58e93"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "strictdom",
+      "version": "1.0.1",
+      "license": "MIT",
+      "repository": {
+        "type": "git",
+        "url": "git://github.com/wilsonpage/strictdom.git"
+      },
+      "notices": [
+        {
+          "path": "docs/third_party/frontend/strictdom-1.0.1/README.md",
+          "sha256": "9280accadb9c4d0aa2de2b304da7f477eacb0823504964b71370eb7ab99c202d"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "stylis",
+      "version": "4.4.0",
+      "license": "MIT",
+      "repository": "https://github.com/thysultan/stylis.js",
+      "notices": [
+        {
+          "path": "docs/third_party/frontend/stylis-4.4.0/LICENSE",
+          "sha256": "88c579c6ee44b41137a21321190d177982e5b17d4fa1b83a4a2e3ea325a8fc9a"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "tinyexec",
+      "version": "1.3.1",
+      "license": "MIT",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/tinylibs/tinyexec.git"
+      },
+      "notices": [
+        {
+          "path": "docs/third_party/frontend/tinyexec-1.3.1/LICENSE",
+          "sha256": "f95f668fe64081ddb4153b322e34fdd719b991285ed08177d5ad7133b7988d92"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "ts-dedent",
+      "version": "2.3.0",
+      "license": "MIT",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/tamino-martinius/node-ts-dedent.git"
+      },
+      "notices": [
+        {
+          "path": "docs/third_party/frontend/ts-dedent-2.3.0/LICENSE",
+          "sha256": "eff13095d9d762c3bd9dda74370c81e2130c28f2691bc455603abf973bac25b9"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    },
+    {
+      "name": "uuid",
+      "version": "14.0.2",
+      "license": "MIT",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/uuidjs/uuid.git"
+      },
+      "notices": [
+        {
+          "path": "docs/third_party/frontend/uuid-14.0.2/LICENSE.md",
+          "sha256": "beaa6b04fb82e41dd2ad679e19e27953afb5999b1abbb455b6564e78ebfeb332"
+        }
+      ],
+      "notice_copyleft_mentions": []
+    }
+  ],
+  "model_resources": []
+}

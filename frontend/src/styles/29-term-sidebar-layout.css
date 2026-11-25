@@ -1,0 +1,101 @@
+/* Only the reading body makes room for the drawer; headers keep their width. */
+.shell {
+  --term-sidebar-left: var(--sidebar-w);
+  --term-sidebar-width: min(380px, calc(100vw - var(--term-sidebar-left) - 28px));
+}
+.shell.is-rail {
+  --term-sidebar-left: var(--rail-w);
+}
+.term-sidebar-slot {
+  display: contents;
+}
+.term-sidebar-slot[hidden] {
+  display: none;
+}
+.term-sidebar-viewport {
+  position: fixed;
+  top: var(--term-sidebar-top, 0px);
+  bottom: 0;
+  left: var(--term-sidebar-left);
+  width: calc(var(--term-sidebar-width) + 28px);
+  z-index: 75;
+  overflow: hidden;
+  pointer-events: none;
+}
+.term-sidebar-drawer {
+  width: var(--term-sidebar-width);
+  height: 100%;
+  transform: translateX(-100%);
+  transition: transform 0.24s var(--ease);
+  pointer-events: auto;
+}
+.term-sidebar-drawer.is-open {
+  transform: translateX(0);
+}
+.term-sidebar-tab {
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 76;
+  display: grid;
+  place-items: center;
+  width: 22px;
+  height: 64px;
+  padding: 0;
+  border: 1px solid var(--border-strong);
+  border-left: 0;
+  border-radius: 0 12px 12px 0;
+  background: var(--sidebar);
+  color: var(--muted);
+  box-shadow: 3px 0 8px #00000008;
+  cursor: pointer;
+  transition:
+    color 0.15s,
+    background 0.15s;
+}
+.term-sidebar-tab:hover,
+.term-sidebar-tab:focus-visible {
+  color: var(--accent);
+  background: var(--hover);
+}
+.term-sidebar-drawer.is-open .term-sidebar-tab svg {
+  transform: rotate(180deg);
+}
+.term-sidebar-backdrop {
+  display: none;
+  position: fixed;
+  inset: var(--term-sidebar-top, 0px) 0 0 var(--term-sidebar-left);
+  z-index: 74;
+  border: 0;
+  border-radius: 0;
+  background: #0f111540;
+}
+@media (max-width: 1180px) {
+  .term-sidebar-backdrop {
+    display: block;
+  }
+}
+.continuous-reading-body {
+  position: relative;
+  min-width: 0;
+}
+@media (min-width: 1181px) {
+  .shell.has-term-sidebar .continuous-reading-body {
+    margin-left: var(--term-sidebar-width);
+  }
+}
+@media (max-width: 720px) {
+  .shell {
+    --term-sidebar-left: 0px;
+  }
+  .term-sidebar-tab {
+    width: 24px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .term-sidebar-drawer,
+  .term-sidebar-tab {
+    transition: none;
+  }
+}
