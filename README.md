@@ -2,6 +2,8 @@
 
 PaperLens 是一个可以回到原文核查的论文阅读工作区。导入 PDF 后，你可以立即开始阅读原页。后台完成分析后，打开论点、公式或引用，即可对照对应的原文和页码。
 
+[项目展示与 BERT 在线试读](https://justavisitorr.github.io/Paperlens/)
+
 ![PaperLens 中一篇论文的阅读工作区与研究导图](docs/images/paperlens-workspace.png)
 
 ## 读第一篇论文

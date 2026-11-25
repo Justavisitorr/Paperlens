@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f8f6ef">
+    <meta name="description" content="PaperLens 是可回到原文核查的开源论文阅读工作区。从 BERT 的三处真实证据开始试读，查看研究导图、引用与离线阅读功能。">
+    <title>PaperLens · 回到原文的论文阅读工作区</title>
+    <link rel="icon" href="./showcase/paperlens.svg" type="image/svg+xml">
+    <link rel="canonical" href="https://justavisitorr.github.io/Paperlens/">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="zh_CN">
+    <meta property="og:title" content="PaperLens · 读懂论文，回到原文。">
+    <meta property="og:description" content="从 BERT 的图、段落和表格出发，体验一次有原文可查的论文阅读。">
+    <meta property="og:image" content="https://justavisitorr.github.io/Paperlens/images/paperlens-workspace.png">
+    <meta property="og:url" content="https://justavisitorr.github.io/Paperlens/">
+    <link rel="stylesheet" href="./showcase/site.css">
+    <script src="./showcase/site.js" defer></script>
+  </head>
+  <body id="top">
+    <a class="skip" href="#main">跳到正文</a>
+    <header class="masthead">
+      <div class="wrap nav-row">
+        <a class="brand" href="#top" aria-label="PaperLens 首页">
+          <img src="./showcase/paperlens.svg" width="33" height="33" alt="">
+          <span>PaperLens</span>
+        </a>
+        <nav class="main-nav" aria-label="主导航">
+          <a href="#example">论文试读</a>
+          <a href="#workspace">工作区</a>
+          <a class="nav-start" href="#start">开始使用</a>
+        </nav>
+        <a class="repo-link" href="https://github.com/Justavisitorr/Paperlens">GitHub <span aria-hidden="true">↗</span></a>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero wrap" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="rule" aria-hidden="true"></span>开源论文阅读工作区</p>
+          <h1 id="hero-title">读懂论文，<br><em>回到原文。</em></h1>
+          <p class="lead">把研究导图、证据引句和参考文献放在一起。读到一个值得追问的结论，就翻到支持它的那一页。</p>
+          <div class="actions">
+            <a class="button primary" href="#example">试读 BERT <span aria-hidden="true">→</span></a>
+            <a class="text-link" href="#start">在本地运行 <span aria-hidden="true">↘</span></a>
+          </div>
+        </div>
+        <figure class="paper-stage">
+          <div class="folio">
+            <div class="folio-meta"><span>Devlin et al.</span><span>NAACL 2019</span></div>
+            <p class="paper-title" lang="en">BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding</p>
+            <img class="cover-figure" src="./showcase/bert-architecture.webp" width="1377" height="558"
+              alt="BERT 论文图 1，左侧是预训练，右侧是不同下游任务的微调。">
+            <p class="figure-legend" lang="en"><b>Figure 1.</b> Pre-training and fine-tuning.</p>
+          </div>
+          <figcaption>
+            <a class="annotation" href="./showcase/bert.pdf#page=3" target="_blank" rel="noopener">
+              <span class="note-index">原文证据 <span aria-hidden="true">/</span> 图 1</span>
+              <span class="note-main">查看 PDF 第 3 页 <span aria-hidden="true">↗</span></span>
+            </a>
+          </figcaption>
+        </figure>
+      </section>
+
+      <section class="sample area" id="example" aria-labelledby="sample-title">
+        <div class="wrap">
+          <div class="section-intro">
+            <div>
+              <p class="eyebrow"><span class="rule" aria-hidden="true"></span>论文试读</p>
+              <h2 id="sample-title">用 BERT 试读三处证据</h2>
+            </div>
+            <p class="intro-hint">选一个问题，对照出版版 PDF 的图、段落或表格。</p>
+          </div>
+          <div class="sample-frame">
+            <div class="tab-row" hidden id="sample-tabs" role="tablist" aria-label="选择 BERT 试读主题">
+              <button type="button" id="tab-results" role="tab" aria-selected="true" aria-controls="panel-results">GLUE 分数</button>
+              <button type="button" id="tab-architecture" role="tab" aria-selected="false" aria-controls="panel-architecture" tabindex="-1">模型架构</button>
+              <button type="button" id="tab-masking" role="tab" aria-selected="false" aria-controls="panel-masking" tabindex="-1">掩码预训练</button>
+            </div>
+            <article class="evidence" id="panel-results" aria-labelledby="question-results">
+              <div class="evidence-copy">
+                <p class="source-locator">表 1 与第 4.1 节 <i aria-hidden="true"></i> 印刷页 4176</p>
+                <h3 id="question-results">为何同页有 82.1 和 80.5 两个分数？</h3>
+                <p>表 1 给出的 BERT<sub>LARGE</sub> 平均分为 82.1，表注说明计算时排除了 WNLI。正文另列官方 GLUE 榜单分数 80.5。引用结果时要写清采用的口径。</p>
+                <a class="source-link" href="./showcase/bert.pdf#page=6" target="_blank" rel="noopener">核对 PDF 第 6 页 <span aria-hidden="true">↗</span></a>
+              </div>
+              <figure class="source-figure">
+                <img src="./showcase/bert-results.webp" width="1377" height="492" loading="lazy" alt="表 1 末行 BERT LARGE 的 Average 列为 82.1，表注交代了 WNLI 的处理方式。">
+                <figcaption>GLUE 测试集结果与表注 · 原表节选</figcaption>
+              </figure>
+            </article>
+            <article class="evidence" id="panel-architecture" aria-labelledby="question-architecture">
+              <div class="evidence-copy">
+                <p class="source-locator">图 1 <i aria-hidden="true"></i> 印刷页 4173</p>
+                <h3 id="question-architecture">换一个任务，需要换一套模型吗？</h3>
+                <p>图 1 将预训练和微调并排画出。除了输出层，两侧采用相同的架构。不同任务从同一组预训练参数出发，微调时更新全部参数。</p>
+                <a class="source-link" href="./showcase/bert.pdf#page=3" target="_blank" rel="noopener">核对 PDF 第 3 页 <span aria-hidden="true">↗</span></a>
+              </div>
+              <figure class="source-figure">
+                <img src="./showcase/bert-architecture.webp" width="1377" height="558" loading="lazy" alt="图 1 用相同的 BERT 编码器示意预训练和微调，微调侧上方连接不同任务的输出。">
+                <figcaption>BERT 预训练与微调流程 · 原图节选</figcaption>
+              </figure>
+            </article>
+            <article class="evidence" id="panel-masking" aria-labelledby="question-masking">
+              <div class="evidence-copy">
+                <p class="source-locator">第 3.1 节 <i aria-hidden="true"></i> 印刷页 4174</p>
+                <h3 id="question-masking">掩码预测中的 15% 指什么？</h3>
+                <p>作者从每个序列中随机选取 15% 的 WordPiece 词元作为预测目标。模型利用上下文恢复这些位置上的原词元。</p>
+                <a class="source-link" href="./showcase/bert.pdf#page=4" target="_blank" rel="noopener">核对 PDF 第 4 页 <span aria-hidden="true">↗</span></a>
+              </div>
+              <figure class="source-figure">
+                <img class="text-crop" src="./showcase/bert-masking.webp" width="672" height="291" loading="lazy" alt="第 3.1 节右栏的原文段落，说明每个序列随机选取 15% 的 WordPiece 词元进行预测。">
+                <figcaption>掩码语言模型的预测目标 · 正文节选</figcaption>
+              </figure>
+            </article>
+          </div>
+          <p class="attribution">示例选自 Jacob Devlin、Ming-Wei Chang、Kenton Lee 和 Kristina Toutanova 的 BERT 论文。图文按原页裁切，中文解读为本站整理。
+            <a href="https://aclanthology.org/N19-1423/">出版页</a><span aria-hidden="true"> · </span><a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>
+          </p>
+        </div>
+      </section>
+
+      <section class="workspace area wrap" id="workspace" aria-labelledby="workspace-title">
+        <div class="workspace-copy">
+          <p class="eyebrow"><span class="rule" aria-hidden="true"></span>阅读工作区</p>
+          <h2 id="workspace-title">一篇论文的<br>几种读法</h2>
+          <dl class="features">
+            <div><dt>顺着导图读</dt><dd>展开研究问题、方法和实验，点进论点查看支撑它的原文。</dd></div>
+            <div><dt>沿着引用找</dt><dd>定位正文引用，按来源打开文献，复制 BibTeX 或 LaTeX 引用。</dd></div>
+            <div><dt>把结果带走</dt><dd>导出单文件 HTML。离线打开，继续看正文、公式、导图和原 PDF。</dd></div>
+          </dl>
+        </div>
+        <figure class="workspace-preview">
+          <a href="./images/paperlens-workspace.png" target="_blank" rel="noopener" aria-label="查看 PaperLens 工作区完整截图">
+            <img src="./images/paperlens-workspace.png" width="1440" height="960" loading="lazy" alt="PaperLens 实际界面。左侧是论文目录，中间是 BERT 研究导图，右侧显示论点概述和阅读建议。">
+          </a>
+          <figcaption><span>BERT · 研究全景</span><a href="./images/paperlens-workspace.png" target="_blank" rel="noopener">查看大图 <span aria-hidden="true">↗</span></a></figcaption>
+        </figure>
+      </section>
+
+      <section class="start" id="start" aria-labelledby="start-title">
+        <div class="wrap start-inner">
+          <div>
+            <p class="eyebrow"><span class="rule" aria-hidden="true"></span>开始使用</p>
+            <h2 id="start-title">打开你自己的论文。</h2>
+            <p>Windows 用户下载并解压源码后，双击 <strong>启动 PaperLens.cmd</strong>。在「设置 → 模型连接」填入自己的模型密钥，就可以导入 PDF。</p>
+          </div>
+          <div class="start-actions">
+            <a class="button inverse" href="https://github.com/Justavisitorr/Paperlens/archive/refs/heads/main.zip">下载源码 ZIP <span aria-hidden="true">↓</span></a>
+            <a class="start-guide" href="https://github.com/Justavisitorr/Paperlens#从源码运行">完整安装说明 <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer wrap">
+      <a class="brand" href="#top"><img src="./showcase/paperlens.svg" width="25" height="25" alt=""><span>PaperLens</span></a>
+      <div><a href="https://github.com/Justavisitorr/Paperlens/blob/main/LICENSE">MIT 许可</a><a href="https://github.com/Justavisitorr/Paperlens">GitHub <span aria-hidden="true">↗</span></a></div>
+    </footer>
+  </body>
+</html>
