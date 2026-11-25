@@ -251,7 +251,7 @@ export interface SettingsSchema {
 /** "library" etc. = native endpoint; "fallback" = reconstructed from jobs. */
 export type Source = "native" | "fallback";
 
-export const serverMode = /^https?:$/.test(location.protocol);
+export const serverMode = import.meta.env.MODE !== "pages" && /^https?:$/.test(location.protocol);
 
 export class ApiError extends Error {
   status: number;
@@ -654,9 +654,18 @@ export function loadCompleteReport(paper: ReportSource): Promise<DashboardReport
 }
 
 const DATA_SLOT =
-  /(<script id="paperlens-data" type="application\/json">)\s*null\s*(<\/script>)/;
+  /(<script id="paperlens-data" type="application\/json">)\s*(?:null|__PAPERLENS_[A-Z]+__)\s*(<\/script>)/;
 const NOTICES =
   /<script id="paperlens-open-source-notices" type="application\/json">[\s\S]*?<\/script>/;
+
+export function embedReportHtml(template: string, report: DashboardReport): string {
+  if (!DATA_SLOT.test(template)) throw new Error("当前页面资源不完整，无法生成离线文件");
+  const data = JSON.stringify(report)
+    .replace(/</g, "\\u003c")
+    .replace(/\u2028/g, "\\u2028")
+    .replace(/\u2029/g, "\\u2029");
+  return template.replace(DATA_SLOT, (_, open, close) => open + data + close);
+}
 
 /**
  * A standalone copy of the page being served, with one paper's report inside.
@@ -672,13 +681,7 @@ export async function offlineHtml(paper: {
     request<string>("/", { cache: "no-store" }),
     loadCompleteReport(paper),
   ]);
-  if (!DATA_SLOT.test(template)) throw new Error("当前页面资源不完整，无法生成离线文件");
-  // Same encoding as the service: '<' can never close the data script.
-  const data = JSON.stringify(report)
-    .replace(/</g, "\\u003c")
-    .replace(/\u2028/g, "\\u2028")
-    .replace(/\u2029/g, "\\u2029");
-  let html = template.replace(DATA_SLOT, (_, open, close) => open + data + close);
+  let html = embedReportHtml(template, report);
   // Carry over the open-source notices the service appends to saved reports.
   const saved = paper.report_url
     ? await request<string>(paper.report_url).catch(() => "")

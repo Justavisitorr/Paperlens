@@ -2,11 +2,19 @@
 
 PaperLens 是一个可以回到原文核查的论文阅读工作区。导入 PDF 后，你可以立即开始阅读原页。后台完成分析后，打开论点、公式或引用，即可对照对应的原文和页码。
 
-[项目展示与 BERT 在线试读](https://justavisitorr.github.io/Paperlens/)
+[打开网页工作区](https://justavisitorr.github.io/Paperlens/) · [免密钥试读 BERT](https://justavisitorr.github.io/Paperlens/?paper=bert)
 
 ![PaperLens 中一篇论文的阅读工作区与研究导图](docs/images/paperlens-workspace.png)
 
-## 读第一篇论文
+## 在浏览器读第一篇论文
+
+打开网页工作区，选择 PDF，填写自己的 DeepSeek 或 OpenAI API 密钥，点击 **开始分析**。选择文件后就可以另开标签阅读原 PDF。示例 BERT 已有完整报告，打开即可查看原文、导图和证据。
+
+在线分析每次最多发送四页原始页图。页面会先列出预计请求数，再由浏览器直接联系所选服务商，费用由提供密钥的账户承担。密钥仅在标签页内存中使用。PDF 和报告保存在当前浏览器，可导出为离线 HTML。分析时请保持标签页打开。当前批次失败时可以手动重试，成功的批次在本标签页内复用。
+
+网页报告提供逐页分析、论点图和可核对的引句。能与 PDF 文字层匹配的引句附带定位，扫描件的模型转录需要对照原页。需要后台队列、独立账户、分阶段审校或译文时可运行完整服务。
+
+## 在本机运行完整服务
 
 1. [下载源码](https://github.com/Justavisitorr/Paperlens/archive/refs/heads/main.zip)，完整解压。在 Windows 上双击 **启动 PaperLens.cmd**。首次启动会联网安装依赖，随后打开本机阅读页。
 2. 打开 **设置 → 模型连接**，填写自己的模型服务地址、API 密钥和模型名称。选择支持 PDF 或页面图像输入的模型。新工作区预设 DeepSeek 连接，也可以自行配置其他服务。模型调用费用由提供密钥的账户承担。
@@ -69,6 +77,8 @@ npm run build
 ```
 
 前端构建结果为 `frontend/dist/index.html`。更新 Python 包内置界面时，将它复制到 `src/paperlens/assets/dashboard.html`。
+
+在 `frontend` 目录运行 `npm run build:pages`，会将独立网页工作区写入 `docs/index.html`。GitHub Pages 从 `main` 分支的 `/docs` 发布。
 
 ## 许可
 

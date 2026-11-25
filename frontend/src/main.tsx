@@ -61,8 +61,21 @@ if (raw && raw !== "null" && !raw.startsWith("__PAPERLENS_")) {
     window.__paperlensErrors.push(error);
   }
 }
-createRoot(document.getElementById("root")!).render(
-  <ErrorBoundary>
-    <App embedded={report} bootError={error} />
-  </ErrorBoundary>,
-);
+const root = createRoot(document.getElementById("root")!);
+if (import.meta.env.MODE === "pages" && !report && !error) {
+  import("./browser/BrowserWorkspace")
+    .then(({ default: Workspace }) => {
+      root.render(
+        <ErrorBoundary>
+          <Workspace />
+        </ErrorBoundary>,
+      );
+    })
+    .catch(() => root.render(<p role="alert">网页工作区未能加载，请刷新重试。</p>));
+} else {
+  root.render(
+    <ErrorBoundary>
+      <App embedded={report} bootError={error} />
+    </ErrorBoundary>,
+  );
+}
